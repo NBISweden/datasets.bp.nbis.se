@@ -1,36 +1,15 @@
 ---
-title: "AIDA Dataset Register"
-description: "Information on datasets shared on the <a href='/'>AIDA Data Hub</a>."
+title: "Bigpicture Datasets"
+description: "Information on datasets shared on the <a href='/'>Bigpicture</a>."
 ---
-The most important factor for building world-class AI is access to massive
-amounts of high-quality training data. We help researchers collaboratively
-gather, annotate, share and enrich large volumes of research data for machine
-learning in medical imaging diagnostics.
-
-This register shows information on datasets that we have helped researchers
-share [with the world](/metrics), to make their high-quality datasets more
-[FAIR](/metrics#fair) and citeable using Digital Object Identifiers
-([DOI](/about#what-are-dois-and-dataset-registers)).
-{% assign bytes = 0 -%}
-{% assign scans = 0 -%}
-{% assign annotations = 0 -%}
-{% assign datasets = 0 -%}
-{% for d in site.datasets -%}
-  {% if d.hidden %}{% continue  %}{% endif -%}
-  {% assign bytes = d.other.bytes | default: 0 | plus: bytes -%}
-  {% assign scans = d.other.numberOfScans | default: 0 | plus: scans -%}
-  {% assign annotations = d.other.numberOfAnnotations | default: 0 | plus: annotations -%}
-  {% assign datasets = datasets | plus: 1 %}
-{% endfor -%}
-So far <b>{% include human_friendly_filesize bytes=bytes %} </b> data
-have been shared, in {{ scans }} scans with {{ annotations }} annotations in {{ datasets }} datasets,
-according to clinical [data acquisition priorities](/prio)
-
-You can also [Search](/search), see [Metrics](/metrics), use the [API](/api),
-or learn more about [FAIR and DOI](/about#what-are-dois-and-dataset-registers).
 
 
-## Datasets shared on the AIDA Data Hub
+Suspendisse ullamcorper dolor ultrices purus lobortis dignissim. Ut in purus vestibulum, egestas tortor eu, ullamcorper nulla. Nunc nunc mi, faucibus ut faucibus et, tincidunt et velit. Ut porta enim ut erat tincidunt vestibulum. Nunc in erat a nulla placerat dignissim. Suspendisse scelerisque sapien at lacinia feugiat. Quisque id maximus ipsum. Nam commodo nisl nunc, eu fermentum arcu varius et. Suspendisse in tempor nibh.
+
+Pellentesque fringilla vehicula justo, ut tincidunt turpis ultricies id. Aliquam quis ex egestas, egestas diam ac, malesuada dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus nunc metus, placerat eu pellentesque ut, rhoncus vitae eros. Etiam dignissim metus urna, a vehicula odio gravida venenatis. Aenean non ante et justo consequat vehicula. Nulla porta faucibus turpis, sed viverra purus molestie vel. Proin at egestas felis, quis bibendum ante. Nulla ut lacinia leo. Etiam sit amet quam nec lorem porta lacinia. Nunc efficitur turpis purus, ac iaculis mauris vulputate eget. Maecenas arcu lectus, tristique vitae porta a, euismod at felis.
+
+
+## Datasets on Bigpicture
 
 <div class="dataset-table">
   <table>

@@ -4,9 +4,9 @@ datacite:
   "@context": "http://schema.org"
   "@type": "Dataset"
   "@id": "https://doi.org/mock_1"
-  name: "Mock data 1"
+  name: "Mock data1"
   about: "Pathology"
-  url: "https://bp.Mock data 1"
+  url: "https:/.Mock"
   author:
   - name: "Person 1"
     #"@id": # FIXME: missing info
@@ -104,20 +104,20 @@ other:
   - Hamamatsu NanoZoomer S60
   stain: "Hematoxylin and eosin. In sentinel node cases also immunohistochemical stain  for cytokeratin AE1/AE3."
   phase:
-  image: "/assets/images/10.23698/aida/brln/ckae-metastasis-thumbnail.jpeg"
+  image: "/datasets/assets/images/mock_datasets/bp/m1/ckae-metastasis-thumbnail.jpeg"
   exampleImage:
   - title: "Overview of whole slide imaging with hematoxylin and eosin staining."
-    url: "/assets/images/10.23698/aida/brln/he-overview.jpeg"
-    thumbnail-url: "/assets/images/10.23698/aida/brln/he-overview-thumbnail.jpeg"
+    url: "/assets/images/mock_datasets/bp/m1/he-overview.jpeg"
+    thumbnail-url: "/assets/images/mock_datasets/bp/m1/he-overview-thumbnail.jpeg"
   - title: "Overview of whole slide imaging with cytokeratin immunostaining."
     url: "/assets/images/10.23698/aida/brln/ckae-overview.jpeg"
-    thumbnail-url: "/assets/images/10.23698/aida/brln/ckae-overview-thumbnail.jpeg"
+    thumbnail-url: "/assets/images/mock_datasets/bp/m1/ckae-overview-thumbnail.jpeg"
   - title: "Detail view of metastasis with hematoxylin and eosin staining."
     url: "/assets/images/10.23698/aida/brln/he-metastasis.jpeg"
-    thumbnail-url: "/assets/images/10.23698/aida/brln/he-metastasis-thumbnail.jpeg"
+    thumbnail-url: "/assets/images/mock_datasets/bp/m1/he-metastasis-thumbnail.jpeg"
   - title: "Detail view of metastasis with cytokeratin immunostaining."
-    url: "/assets/images/10.23698/aida/brln/ckae-metastasis.jpeg"
-    thumbnail-url: "/assets/images/10.23698/aida/brln/ckae-metastasis-thumbnail.jpeg"
+    url: "/assets/images/mock_datasets/bp/m1/ckae-metastasis.jpeg"
+    thumbnail-url: "/assets/images/mock_datasets/bp/m1/ckae-metastasis-thumbnail.jpeg"
 ---
 ## File formats
 ### Pixel position scaling
@@ -132,7 +132,7 @@ Please contact the dataset provider for terms of access.
 
 {% include access-request-blurb.md coauthorship="yes" %}
 
-### AIDA BY CA license
+### License
 Copyright
 {{ page.datacite.copyrightYear }}
 {{ page.datacite.copyrightHolder | map: "name" |  join: ", " }}
