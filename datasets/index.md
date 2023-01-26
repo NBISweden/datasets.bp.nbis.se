@@ -16,9 +16,9 @@ Pellentesque fringilla vehicula justo, ut tincidunt turpis ultricies id. Aliquam
     {% for d in site.datasets %}
       {% if d.hidden %}{% continue  %}{% endif %}
       <tr>
-        <td><a href="{{ d.url }}"><img src="{{ d.other.image | default: d.other.exampleImage[0].thumbnail-url | default: d.other.exampleImage[0].url }}"></a></td>
+        <td><a href="{{site.baseurl}}{{ d.url }}"><img src="{{site.baseurl}}{{ d.other.image | default: d.other.exampleImage[0].thumbnail-url | default: d.other.exampleImage[0].url }}"></a></td>
         <td>
-          <a href="{{ d.url }}">{{ d.datacite.name }}</a><br/>
+          <a href="{{site.baseurl}}{{ d.url }}">{{ d.datacite.name }}</a><br/>
           <span class="keywords">Keywords: {{ d.datacite.keywords }}.</span><br/>
           <a href="{{ d.datacite["@id"] }}" class="doi">doi:{{ d.datacite["@id"] | remove: "https://doi.org/" }}</a>
         </td>

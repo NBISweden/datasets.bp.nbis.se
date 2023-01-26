@@ -4,7 +4,7 @@ datacite:
   "@context": "http://schema.org"
   "@type": "Dataset"
   "@id": "https://doi.org/mock_1"
-  name: "Mock data1"
+  name: "Mock data 1"
   about: "Pathology"
   url: "https:/.Mock"
   author:
@@ -104,16 +104,16 @@ other:
   - Hamamatsu NanoZoomer S60
   stain: "Hematoxylin and eosin. In sentinel node cases also immunohistochemical stain  for cytokeratin AE1/AE3."
   phase:
-  image: "/datasets/assets/images/mock_datasets/bp/m1/ckae-metastasis-thumbnail.jpeg"
+  image: "/assets/images/mock_datasets/bp/m1/ckae-metastasis-thumbnail.jpeg"
   exampleImage:
   - title: "Overview of whole slide imaging with hematoxylin and eosin staining."
     url: "/assets/images/mock_datasets/bp/m1/he-overview.jpeg"
     thumbnail-url: "/assets/images/mock_datasets/bp/m1/he-overview-thumbnail.jpeg"
   - title: "Overview of whole slide imaging with cytokeratin immunostaining."
-    url: "/assets/images/10.23698/aida/brln/ckae-overview.jpeg"
+    url: "/assets/images/mock_datasets/bp/m1/ckae-overview.jpeg"
     thumbnail-url: "/assets/images/mock_datasets/bp/m1/ckae-overview-thumbnail.jpeg"
   - title: "Detail view of metastasis with hematoxylin and eosin staining."
-    url: "/assets/images/10.23698/aida/brln/he-metastasis.jpeg"
+    url: "/assets/images/mock_datasets/bp/m1/he-metastasis.jpeg"
     thumbnail-url: "/assets/images/mock_datasets/bp/m1/he-metastasis-thumbnail.jpeg"
   - title: "Detail view of metastasis with cytokeratin immunostaining."
     url: "/assets/images/mock_datasets/bp/m1/ckae-metastasis.jpeg"
@@ -137,23 +137,11 @@ Copyright
 {{ page.datacite.copyrightYear }}
 {{ page.datacite.copyrightHolder | map: "name" |  join: ", " }}
 
-Permission to use, copy, modify, and/or distribute this data within Analytic
-Imaging Diagnostics Arena ([AIDA](https://medtech4health.se/aida)) for the
-purpose of medical diagnostics research with or without fee is hereby granted,
-provided that the above copyright notice and this permission notice appear in
-all copies, and that publications resulting from the use of this data include
-the authors of this dataset Person 1 and Person 2in the author list
-and cite the following works:
+Donec nibh elit, tincidunt eget vulputate ac, consequat in ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras interdum enim at libero sodales finibus. Donec vitae lorem quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus eget orci vulputate quam porttitor dignissim. Maecenas commodo, nibh et iaculis blandit, leo arcu scelerisque tortor, id porttitor metus tortor commodo quam. Vivamus a dapibus ipsum, eu euismod elit.
 
 {{ page.datacite.author | map: "name" | array_to_sentence_string }}
 ({{ page.datacite.datePublished | date: "%Y" }})
 {{ page.datacite.name }}
 [doi:{{ page.datacite['@id'] | remove: "https://doi.org/" }}]({{ page.datacite["@id"] }}).
 
-THE DATA IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD
-TO THIS DATA INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN
-NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR
-CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA
-OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS
-ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR CHARACTERISTICS OF THIS
-DATA.
+ Integer tempus ullamcorper quam, eu consequat ante pulvinar ac. Nulla in ipsum mattis, congue orci vitae, rhoncus lacus. Aliquam nunc turpis, tincidunt in nibh eu, bibendum luctus diam. Praesent varius orci erat, nec sollicitudin tellus venenatis vel. Morbi quis ullamcorper arcu, quis ultricies odio.
