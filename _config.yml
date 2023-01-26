@@ -2,7 +2,7 @@ title: "Bigpicture DOI demo"
 description: "Demo for Bigpicture landing page"
 
 theme: "jekyll-theme-cayman"
-baseurl: /bigpicture.doi.demo.github.io
+baseurl: /datasets.bp.nbis.se
 
 collections:
   datasets:
