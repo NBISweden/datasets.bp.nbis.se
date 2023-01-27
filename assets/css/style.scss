@@ -3,9 +3,12 @@
 // - All pages ----------------------------------------------------------------
 @import "{{ site.theme }}";
 
+.main-content h2{
+  color: rebeccapurple;
+}
 
 .page-header {
-  background-color: #146eb8;
+  background-color: None;
   background-image: url("{{site.baseurl}}/assets/images/bigpicture-banner.jpg");
   color: #1C007B;
   background-size: 50%;
@@ -215,6 +218,20 @@ table.aida-data-sharing-overview td:first-child::before {
   content: counter(myOrderedListItemsCounter)".";
 }
 
+
+.topnav a{
+  color:rebeccapurple;
+  padding: 20px;
+  font-weight: 700;
+ text-decoration:none;
+}
+.topnav {
+  position: relative;
+  background-color: white;
+  overflow: hidden;
+  padding: 1rem;
+  text-align: center;
+}
 // - Metrics page -------------------------------------------------------------
 
 // Making mouseover hover styles for member countries on the map, eg:

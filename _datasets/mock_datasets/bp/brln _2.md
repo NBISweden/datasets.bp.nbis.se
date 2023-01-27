@@ -4,7 +4,7 @@ datacite:
   "@context": "http://schema.org"
   "@type": "Dataset"
   "@id": "https://doi.org/mock_1"
-  name: "Mock data 1"
+  name: "Mock data 2"
   about: "Pathology"
   url: "https:/.Mock"
   author:
@@ -69,8 +69,8 @@ datacite:
     "@type": "CreativeWork"
     abstract: |
       Free for use in legal and ethical medical diagnostics research.
-  - name: "Bigpicture license"
-    id: "https://d"
+  - name: "Big picture license"
+    id: "https://"
   citation:
     #- "@type": "CreativeWork"
     #  "@id": "https://doi.org/..."
