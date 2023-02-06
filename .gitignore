@@ -2,3 +2,7 @@ _site/
 _site/index.html
 _site/datasets/index.html
 _site/assets/css/style.css
+_site/assets/
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
