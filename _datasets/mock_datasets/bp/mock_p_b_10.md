@@ -4,7 +4,7 @@ datacite:
   "@context": "http://schema.org"
   "@type": "Dataset"
   "@id": "https://doi.org/mock_1"
-  name: "Mock data 1"
+  name: "Mock data 10"
   about: "Pathology"
   url: "https:/.Mock"
   author:
@@ -101,21 +101,20 @@ other:
   - Hamamatsu NanoZoomer S360
   - Hamamatsu NanoZoomer S60
   stain: "Hematoxylin and eosin. In sentinel node cases also immunohistochemical stain  for cytokeratin AE1/AE3."
-  phase:
-  image: "/assets/images/mock_datasets/bp/m1/ckae-metastasis-thumbnail.jpeg"
+  image: "/assets/images/mock_datasets/bp/m_p_b/ckae-metastasis-thumbnail.jpeg"
   exampleImage:
   - title: "Overview of whole slide imaging with hematoxylin and eosin staining."
-    url: "/assets/images/mock_datasets/bp/m1/he-overview.jpeg"
-    thumbnail-url: "/assets/images/mock_datasets/bp/m1/he-overview-thumbnail.jpeg"
+    url: "/assets/images/mock_datasets/bp/m_p_b/he-overview.jpeg"
+    thumbnail-url: "/assets/images/mock_datasets/bp/m_p_b/he-overview-thumbnail.jpeg"
   - title: "Overview of whole slide imaging with cytokeratin immunostaining."
-    url: "/assets/images/mock_datasets/bp/m1/ckae-overview.jpeg"
-    thumbnail-url: "/assets/images/mock_datasets/bp/m1/ckae-overview-thumbnail.jpeg"
+    url: "/assets/images/mock_datasets/bp/m_p_b/ckae-overview.jpeg"
+    thumbnail-url: "/assets/images/mock_datasets/bp/m_p_b/ckae-overview-thumbnail.jpeg"
   - title: "Detail view of metastasis with hematoxylin and eosin staining."
-    url: "/assets/images/mock_datasets/bp/m1/he-metastasis.jpeg"
-    thumbnail-url: "/assets/images/mock_datasets/bp/m1/he-metastasis-thumbnail.jpeg"
+    url: "/assets/images/mock_datasets/bp/m_p_b/he-metastasis.jpeg"
+    thumbnail-url: "/assets/images/mock_datasets/bp/m_p_b/he-metastasis-thumbnail.jpeg"
   - title: "Detail view of metastasis with cytokeratin immunostaining."
-    url: "/assets/images/mock_datasets/bp/m1/ckae-metastasis.jpeg"
-    thumbnail-url: "/assets/images/mock_datasets/bp/m1/ckae-metastasis-thumbnail.jpeg"
+    url: "/assets/images/mock_datasets/bp/m_p_b/ckae-metastasis.jpeg"
+    thumbnail-url: "/assets/images/mock_datasets/bp/m_p_b/ckae-metastasis-thumbnail.jpeg"
 ---
 ## File formats
 ### Pixel position scaling
