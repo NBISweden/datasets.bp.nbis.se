@@ -4,7 +4,7 @@ datacite:
   "@context": "http://schema.org"
   "@type": "Dataset"
   "@id": "https://doi.org/mock_1"
-  name: "AMock data 1"
+  name: "BMock"
   about: "Pathology"
   url: "https:/.Mock"
   author:
@@ -29,7 +29,7 @@ datacite:
   publisher:
     "@type": "Organization"
     name: "BP"
-  copyrightYear: 2019
+  copyrightYear: 2017
   copyrightHolder:
   - name: "University 1"
     url: "https://uni1.se/"
@@ -57,65 +57,67 @@ datacite:
   dateCreated: "2019-11-19"
   datePublished: "2019-11-19"
   dateModified: "2019-11-21"
-  keywords: "Pathology, Whole slide imaging, Breast, Lymph nodes, Cancer, Sentinel nodes, Immunohistochemical staining, cytokeratin, CKAE1/AE3"
-  version: "1.0.2"
+  keywords: "Pathology, Colon, Cancer, Whole slide imaging, Annotated"
+  version: "1.1.0"
+  # v1.1.0 2020-11-27: Add citation.
   # v1.0.2 2020-07-05: Update size in bytes.
   description: |
-    Whole slide imaging of 396 full cases of axillary lymph nodes in breast
-    cancer cases. 
+    The dataset consists of 101 H&E-stained colon whole slide images (WSI)
   license:
   - name: "Controlled access"
-    id: "https://datahub.aida.scilifelab.se/10.23698/aida/brln#controlled-access"
+    id: "https://datahub.aida.scilifelab.se/10.23698/aida/drco#controlled-access"
     "@type": "CreativeWork"
     abstract: |
       Free for use in legal and ethical medical diagnostics research.
-  - name: "Bigpicture license"
-    id: "https://d"
-  citation:
-    #- "@type": "CreativeWork"
-    #  "@id": "https://doi.org/..."
-    #  name: "Title of paper goes here"
+  - name: "AIDA BY license"
+    id: "https://datahub.aida.scilifelab.se/10.23698/aida/drco#aida-by-license"
+    "@type": "CreativeWork"
+    abstract: "Free for use within AIDA with attribution."
+ 
 other:
-  shortName: "ADAT"
-  status: "Ongoing"
-  annotation: |
-    No in-image annotations available. Additional information at case level
-    available on request.
+  shortName: "BMPC"
+  status: "Completed"
+  annotation: No in-image annotations available. Additional information at case level
+    available on request.    
   countries-shared:
-  - "FI"
-  - "NO"
-  - "SE"
+    - "CH"
+    - "FI"
+    - "NO"
+    - "SE"
   organ:
-  - name: "Breast"
-    sctid: 38498374 # SNOMED-CT https://termbrowser.nhs.uk/?perspective=full&conceptId1=%s
-  age-span: "-"
-  bytes: 2363159897649  # 2.4 TB
-  numberOfScans: 4462
-  numberOfAnnotations: 0
-  resolution: "20x"
+  - name: "Colon"
+    sctid: BBV3
+  age-span: "22-90 years"
+  bytes: 49227373916 # 49 GB
+  numberOfScans: 101
+  numberOfAnnotations: 756
+  resolution: "20X and 40X single plane"
   modality:
   - "SM"
   scanner:
-  - Aperio ScanScope AT
-  - Hamamatsu NanoZoomer XR
-  - Hamamatsu NanoZoomer S360
-  - Hamamatsu NanoZoomer S60
-  stain: "Hematoxylin and eosin. In sentinel node cases also immunohistochemical stain  for cytokeratin AE1/AE3."
-  image: "/assets/images/mock_datasets/bp/m_p_b/ckae-metastasis-thumbnail.jpeg"
+  - "Scanscope AT (Aperio, US)"
+  - "NanoZoomer XR (Hamamatsu, Japan)" # FIXME: is this same as "Hamamatsu NanoZoomer-XR C12000 series 2013"?
+  - "NanoZoomer XRL (Hamamatsu, Japan)" # FIXME: is this same as "Hamamatsu NanoZoomer 2.0 HT C9600 series 2013"
+  stain: "H&E (hematoxylin and eosin)"
+  phase:
   exampleImage:
-  - title: "Overview of whole slide imaging with hematoxylin and eosin staining."
-    url: "/assets/images/mock_datasets/bp/m_p_b/he-overview.jpeg"
-    thumbnail-url: "/assets/images/mock_datasets/bp/m_p_b/he-overview-thumbnail.jpeg"
-  - title: "Overview of whole slide imaging with cytokeratin immunostaining."
-    url: "/assets/images/mock_datasets/bp/m_p_b/ckae-overview.jpeg"
-    thumbnail-url: "/assets/images/mock_datasets/bp/m_p_b/ckae-overview-thumbnail.jpeg"
-  - title: "Detail view of metastasis with hematoxylin and eosin staining."
-    url: "/assets/images/mock_datasets/bp/m_p_b/he-metastasis.jpeg"
-    thumbnail-url: "/assets/images/mock_datasets/bp/m_p_b/he-metastasis-thumbnail.jpeg"
-  - title: "Detail view of metastasis with cytokeratin immunostaining."
-    url: "/assets/images/mock_datasets/bp/m_p_b/ckae-metastasis.jpeg"
-    thumbnail-url: "/assets/images/mock_datasets/bp/m_p_b/ckae-metastasis-thumbnail.jpeg"
+  - title: "Overview of whole slide imaging."
+    url: "/assets/images/mock_datasets/bp/m_p_c/wsi.jpeg"
+    thumbnail-url: "/assets/images/mock_datasets/bp/m_p_c/wsi-thumbnail.jpeg"
+  - title: "Overview of annotations."
+    url: "/assets/images/mock_datasets/bp/m_p_c/annotations.jpeg"
+    thumbnail-url: "/assets/images/mock_datasets/bp/m_p_c/annotations-thumbnail.jpeg"
+  - title: "Overview of carcinoma whole slide imaging."
+    url: "/assets/images/mock_datasets/bp/m_p_c/carcinoma.jpeg"
+    thumbnail-url: "/assets/images/mock_datasets/bp/m_p_c/carcinoma-thumbnail.jpeg"
+  - title: "Overview of carcinoma annotations."
+    url: "/assets/images/mock_datasets/bp/m_p_c/carcinoma-annotations.jpeg"
+    thumbnail-url: "/assets/images/mock_datasets/bp/m_p_c/carcinoma-annotations-thumbnail.jpeg"
+  - title: "To-scale view of pixel resolution in original whole slide imaging data."
+    url: "/assets/images/mock_datasets/bp/m_p_c/to-scale.jpeg"
+    thumbnail-url: "/assets/images/mock_datasets/bp/m_p_c/to-scale-thumbnail.jpeg"
 ---
+
 ## File formats
 ### Pixel position scaling
 Coordinates given are relative to the image *width*. To get the correct pixel

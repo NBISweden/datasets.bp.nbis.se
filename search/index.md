@@ -26,7 +26,7 @@ description: "Find datasets of interest on the <a href='/'>AIDA Data Hub</a>."
      <td>{{ d.datacite.datePublished }}</td>
      <td>{% include human_friendly_filesize bytes=d.other.bytes %}</td>
      <td>{% for o in organs %}<a href="{{site.baseurl}}/search/?q=Organ:{{ o }}">{{ o }}</a> {% endfor %}</td>
-     <td><b><a href="{{ d.url }}">{{ d.datacite.name }}</a></b><br/><span style="font-size: small;">{% for k in kw %}<a href="/search/?q={{ k }}">{{ k }}</a>{% unless forloop.last %},{% endunless %} {% endfor %}</span></td>
+     <td><b><a href="{{site.baseurl}}{{ d.url }}">{{ d.datacite.name }}</a></b><br/><span style="font-size: small;">{% for k in kw %}<a href="/search/?q={{ k }}">{{ k }}</a>{% unless forloop.last %},{% endunless %} {% endfor %}</span></td>
    </tr>
  {% endfor %}
  </tbody>
