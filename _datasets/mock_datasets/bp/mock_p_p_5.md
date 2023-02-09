@@ -83,7 +83,7 @@ other:
   caseLevelAnnotaions: "Treatment decision, Gleason, PIRADS, PSA, Prostate volume, clinical T-stage"
   imageLevelAnnotations: "Connection to use"
   numberOfAnnotations:  # 652 (x8 echo times) + 40 (x8 echo times)
-  resolution: "0.2204 microns per pixel (40x)"
+  resolution: "0.2204 icrons per pixel (40x)"
   modality:
   - "SM"
   scanner:
