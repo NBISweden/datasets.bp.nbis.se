@@ -57,7 +57,7 @@ datacite:
   keywords: "Prostate Cancer, Pathology"
   version: "1.0.0"
   description: |
-2000 scanned prostate biopsies from 120 patient cases.
+    2000 scanned prostate biopsies from 120 patient cases.
   license:
   - name: "Controlled access"
     id: "https://datahub.aida.scilifelab.se/10.23698/aida/brln#controlled-access"
@@ -71,11 +71,7 @@ other:
   shortName: "M_p_p"
   status: "Completed"
   annotation: |
-    The cases are annotated with clinical data relevant for the treatment decision and the following treatment decision made in conjunction with the biopsy sampling.
-    Each image is given an identifier which can be connected to the case by the case mapping file.
-    Clinical data and treatment decisions have been extracted by manual medical records search. The information about treatment is what has been noted in conjunction with the diagnosis. 
-    Some cases contain missing data in some of the fields as the data wasn’t available. Some of the biopsies are resliced versions of another biopsy belonging to the same case. 
-    Together with the images macro-images of the biopsies exist with localized annotation of gleason grade and cancer detection as provided in the clinical workflow.
+
   countries-shared: # Fixme: insert link to paper in annotation text above when published.
   - "SE"
   organ:
@@ -87,7 +83,7 @@ other:
   caseLevelAnnotaions: "Treatment decision, Gleason, PIRADS, PSA, Prostate volume, clinical T-stage"
   imageLevelAnnotations: "Connection to use"
   numberOfAnnotations:  # 652 (x8 echo times) + 40 (x8 echo times)
-  resolution: "0.2204 microns per pixel (40x)"
+  resolution: "0.2204 icrons per pixel (40x)"
   modality:
   - "SM"
   scanner:
