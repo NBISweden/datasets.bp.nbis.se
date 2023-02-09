@@ -1,6 +1,6 @@
 ---
 title: "Bigpicture Datasets"
-description: "Information on datasets shared on the <a href='/'>Bigpicture</a>."
+description: "Information on datasets shared on the Bigpicture"
 ---
 
 
