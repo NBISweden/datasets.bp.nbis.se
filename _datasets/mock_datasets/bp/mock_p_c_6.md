@@ -102,8 +102,8 @@ other:
   phase:
   exampleImage:
   - title: "Overview of whole slide imaging."
-    url: "/assets/images/mock_datasets/bp/m_p_c/wsi.jpeg"
-    thumbnail-url: "/assets/images/mock_datasets/bp/m_p_c/wsi-thumbnail.jpeg"
+    url: "/assets/images/mock_datasets/bp/m_p_c/he-metastasis.jpeg"
+    thumbnail-url: "/assets/images/mock_datasets/bp/m_p_c/he-metastasis-thumbnail.jpeg"
   - title: "Overview of annotations."
     url: "/assets/images/mock_datasets/bp/m_p_c/annotations.jpeg"
     thumbnail-url: "/assets/images/mock_datasets/bp/m_p_c/annotations-thumbnail.jpeg"
