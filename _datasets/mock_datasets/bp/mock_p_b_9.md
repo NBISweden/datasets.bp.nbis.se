@@ -115,6 +115,7 @@ other:
   - title: "Detail view of metastasis with cytokeratin immunostaining."
     url: "/assets/images/mock_datasets/bp/m_p_b/ckae-metastasis.jpeg"
     thumbnail-url: "/assets/images/mock_datasets/bp/m_p_b/ckae-metastasis-thumbnail.jpeg"
+access: Direct
 ---
 ## File formats
 ### Pixel position scaling

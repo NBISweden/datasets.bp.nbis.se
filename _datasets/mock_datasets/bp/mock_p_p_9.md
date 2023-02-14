@@ -103,6 +103,7 @@ other:
   - title: "Macro image with annotation"
     url: "/assets/images/mock_datasets/bp/m_p_p/macro_a.jpg"
     thumbnail-url: "/assets/images/mock_datasets/bp/m_p_p/macro_a_thumb.jpg"
+access: Indirect
 ---
 
 

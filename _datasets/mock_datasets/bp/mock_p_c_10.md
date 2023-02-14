@@ -116,6 +116,7 @@ other:
   - title: "To-scale view of pixel resolution in original whole slide imaging data."
     url: "/assets/images/mock_datasets/bp/m_p_c/to-scale.jpeg"
     thumbnail-url: "/assets/images/mock_datasets/bp/m_p_c/to-scale-thumbnail.jpeg"
+access: Indirect
 ---
 
 ## File formats

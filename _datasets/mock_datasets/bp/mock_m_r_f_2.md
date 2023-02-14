@@ -72,7 +72,7 @@ datacite:
     id: "https://datahub.aida.scilifelab.se/10.23698/aida/drco#aida-by-license"
     "@type": "CreativeWork"
     abstract: "Free for use within AIDA with attribution."
- 
+access: Direct
 other:
   shortName: "MRF"
   status: "Completed"
@@ -96,6 +96,7 @@ other:
   - title: "Femur fracture radiograph with an AI generated heatmap indicating probable presence and location of an Atypical Femur Fracture."
     url: "/assets/images/mock_datasets/bp/m_r_f/aff-heatmap.png"
     thumbnail-url: "/assets/images/mock_datasets/bp/m_r_f/aff-heatmap-thumbnail.png"
+access: Direct
 ---
 
 

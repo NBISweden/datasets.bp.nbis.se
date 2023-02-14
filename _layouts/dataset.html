@@ -62,6 +62,12 @@
       <div class="info-box">
         <table>
           <tr>
+            <th>Access</th>
+            <td>
+              <p>{{page.access}}</p> 
+            </td>
+          </tr>
+          <tr>
             <th>Short name</th>
             <td>{{ page.other.shortName }}</td>
           </tr>
@@ -169,13 +175,7 @@
               Copyright {{ page.datacite.copyrightYear }} {{ page.datacite.copyrightHolder | map: "name" |  join: ", " }}
             </td>
           </tr>
-          <tr>
-            <th>Access</th>
-            <td>
-              <p>Direct or Indirect</p>
-                
-            </td>
-          </tr>
+          
         </table>
       </div>
 
