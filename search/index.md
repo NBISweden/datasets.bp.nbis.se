@@ -1,5 +1,5 @@
 ---
-title: "Search"
+title: "Landing page search"
 description: "Find datasets of interest on the Bigpicture.
 ---
 <h1>Note</h1>
