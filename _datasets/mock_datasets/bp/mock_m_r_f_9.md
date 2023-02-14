@@ -94,8 +94,8 @@ other:
   image:
   exampleImage:
   - title: "Femur fracture radiograph with an AI generated heatmap indicating probable presence and location of an Atypical Femur Fracture."
-    url: "/assets/images/mock_datasets/bp/m_r_f/aff-heatmap.png"
-    thumbnail-url: "/assets/images/mock_datasets/bp/m_r_f/aff-heatmap-thumbnail.png"
+    url: "/assets/images/mock_datasets/bp/m_r_f/to-scale (2).jpeg"
+    thumbnail-url: "/assets/images/mock_datasets/bp/m_r_f/to-scale-thumbnail (2).jpeg"
 access: Indirect
 ---
 

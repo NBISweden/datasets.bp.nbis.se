@@ -92,8 +92,8 @@ other:
   phase:
   exampleImage:
   - title: "Example biopsy downsampled 8x"
-    url: "/assets/images/mock_datasets/bp/m_p_p/a.jpg"
-    thumbnail-url: "/assets/images/mock_datasets/bp/m_p_p/a_thumb.jpg"
+    url: "/assets/images/mock_datasets/bp/m_p_p/wsi.jpeg"
+    thumbnail-url: "/assets/images/mock_datasets/bp/m_p_p/wsi-thumbnail.jpeg"
   - title: "Example biopsy downsampled 8x"
     url: "/assets/images/mock_datasets/bp/m_p_p/b.jpg"
     thumbnail-url: "/assets/images/mock_datasets/bp/m_p_p/b_thumb.jpg"

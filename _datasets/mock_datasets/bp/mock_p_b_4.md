@@ -101,7 +101,7 @@ other:
   - Hamamatsu NanoZoomer S360
   - Hamamatsu NanoZoomer S60
   stain: "Hematoxylin and eosin. In sentinel node cases also immunohistochemical stain  for cytokeratin AE1/AE3."
-  image: "/assets/images/mock_datasets/bp/m_p_b/ckae-metastasis-thumbnail.jpeg"
+  image: "/assets/images/mock_datasets/bp/m_p_b/he-metastasis-thumbnail.jpeg"
   exampleImage:
   - title: "Overview of whole slide imaging with hematoxylin and eosin staining."
     url: "/assets/images/mock_datasets/bp/m_p_b/he-overview.jpeg"
