@@ -2,6 +2,12 @@
 title: "Search"
 description: "Find datasets of interest on the Bigpicture.
 ---
+<h1>Note</h1>
+This is a demo of a very simple and coarse grained search function, that lets you find datasets based only on the information that the contributor has decided to put on their dataset description page.
+
+CSC is developing a much better search function based on Beacon, which will enable federated search into potential confidential data, without disclosing any confidential details. This is not that service, but it is what we have in the meantime. When ready, the CSC service will (most likely) replace this search function.
+
+
 <div style="display:table; width:100%;">
     <label for="search" style="display:table-cell; width:1px">Search:&nbsp;</label>
     <input type="text" id="search" style="display:table-cell; width: 100%;" placeholder="Search for example modality:ct lymph node..."/>
