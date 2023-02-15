@@ -3,7 +3,7 @@ hidden: no
 datacite:
   "@context": "http://schema.org"
   "@type": "Dataset"
-  "@id": "https://doi.org/mock_1"
+  "@id": "https://doi.org/10.123/ioma-ojn2"
   name: "CMock"
   about: "Pathology"
   url: "https:/.Mock"
