@@ -68,7 +68,7 @@ datacite:
     id: "https://"
   citation:
 other:
-  shortName: "M_p_p"
+  shortName: "MD38"
   status: "Completed"
   annotation: |
 

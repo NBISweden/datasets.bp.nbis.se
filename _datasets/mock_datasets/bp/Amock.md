@@ -76,7 +76,7 @@ datacite:
     #  "@id": "https://doi.org/..."
     #  name: "Title of paper goes here"
 other:
-  shortName: "M_p_b"
+  shortName: "MD1"
   status: "Ongoing"
   annotation: |
     No in-image annotations available. Additional information at case level

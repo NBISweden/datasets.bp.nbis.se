@@ -68,7 +68,7 @@ datacite:
     id: "https://"
   citation:
 other:
-  shortName: "M_p_p"
+  shortName: "MD33"
   status: "Completed"
   annotation: |
   countries-shared: # Fixme: insert link to paper in annotation text above when published.

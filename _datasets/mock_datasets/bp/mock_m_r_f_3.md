@@ -74,12 +74,12 @@ datacite:
     abstract: "Free for use within BP with attribution."
  
 other:
-  shortName: "MRF"
+  shortName: "MD7"
   status: "Completed"
   countries-shared:
   - "SE"
   organ:
-  - name: "Femur"
+  - name: "Colon"
     sctid: 71341001 
   age-span: ""
   bytes: 3881258996
@@ -93,7 +93,7 @@ other:
   phase:
   image:
   exampleImage:
-  - title: "Femur fracture radiograph with an AI generated heatmap indicating probable presence and location of an Atypical Femur Fracture."
+  - title: "Colon fracture radiograph with an AI generated heatmap indicating probable presence and location of an Atypical Colon Fracture."
     url: "/assets/images/mock_datasets/bp/m_r_f/detail.jpeg"
     thumbnail-url: "/assets/images/mock_datasets/bp/m_r_f/detail-thumbnail.jpeg"
 access: Direct

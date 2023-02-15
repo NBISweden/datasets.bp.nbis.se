@@ -75,7 +75,7 @@ datacite:
     abstract: "Free for use within BP with attribution."
  
 other:
-  shortName: "M_P_C"
+  shortName: "MD24"
   status: "Completed"
   annotation: No in-image annotations available. Additional information at case level
     available on request.    
