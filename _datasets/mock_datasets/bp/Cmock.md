@@ -87,7 +87,7 @@ other:
   numberOfAnnotations: 981
   resolution:
   modality:
-  - "CR"
+  - "SM"
   scanner:
   stain:
   phase:
