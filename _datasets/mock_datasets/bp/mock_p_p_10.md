@@ -3,8 +3,8 @@ hidden: no
 datacite:
   "@context": "http://schema.org"
   "@type": "Dataset"
-  "@id": "https://doi.org/10.123/kn-v7gv73"
-  name: "Mock data 37"
+  "@id": "https://doi.org/10.123/skb4q-ims"
+  name: "Mock data 31"
   about: "Pathology"
   url: "https:/.Mock"
   author:
@@ -92,8 +92,8 @@ other:
   phase:
   exampleImage:
   - title: "Example biopsy downsampled 8x"
-    url: "/assets/images/mock_datasets/bp/m_p_p/he-overview.jpeg"
-    thumbnail-url: "/assets/images/mock_datasets/bp/m_p_p/he-overview-thumbnail.jpeg"
+    url: "/assets/images/mock_datasets/bp/m_p_p/macro_a.jpg"
+    thumbnail-url: "/assets/images/mock_datasets/bp/m_p_p/macro_a_thumb.jpg"
   - title: "Example biopsy downsampled 8x"
     url: "/assets/images/mock_datasets/bp/m_p_p/b.jpg"
     thumbnail-url: "/assets/images/mock_datasets/bp/m_p_p/b_thumb.jpg"

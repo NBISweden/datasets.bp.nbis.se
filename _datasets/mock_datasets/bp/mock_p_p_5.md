@@ -4,7 +4,7 @@ datacite:
   "@context": "http://schema.org"
   "@type": "Dataset"
   "@id": "https://doi.org/10.123/zr4-3ngxn"
-  name: "Mock data 4"
+  name: "Mock data 36"
   about: "Pathology"
   url: "https:/.Mock"
   author:
