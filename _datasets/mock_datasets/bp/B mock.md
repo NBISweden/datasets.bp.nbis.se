@@ -52,7 +52,7 @@ datacite:
     "@type": "Person"
   - name: "BP"
     email: "BP@mock.com"
-    "@id": "https://datahub.aida.scilifelab.se"
+    "@id": "https://datahub.bp.mock.se"
     "@type": "Organization"
   dateCreated: "2019-11-19"
   datePublished: "2019-11-19"
@@ -65,14 +65,14 @@ datacite:
     The dataset consists of 101 H&E-stained colon whole slide images (WSI)
   license:
   - name: "Controlled access"
-    id: "https://datahub.aida.scilifelab.se/10.23698/aida/drco#controlled-access"
+    id: "https://datahub.bp.mock.se/mock/drco#controlled-access"
     "@type": "CreativeWork"
     abstract: |
       Free for use in legal and ethical medical diagnostics research.
-  - name: "AIDA BY license"
-    id: "https://datahub.aida.scilifelab.se/10.23698/aida/drco#aida-by-license"
+  - name: "license"
+    id: "https://datahub.bp.mock.se//mock#bp-by-license"
     "@type": "CreativeWork"
-    abstract: "Free for use within AIDA with attribution."
+    abstract: "Free for use within BP with attribution."
  
 other:
   shortName: "BMPC"
@@ -126,13 +126,12 @@ position, X coordinates (and Y coordinates!) should therefore be multiplied with
 the image *width*.
 
 ## License
-### Controlled access
-Free for use in legal and ethical medical diagnostics research.
-Please contact the dataset provider for terms of access.
 
-{% include access-request-blurb.md coauthorship="yes" %}
 
-### License
+
+
+
+
 Copyright
 {{ page.datacite.copyrightYear }}
 {{ page.datacite.copyrightHolder | map: "name" |  join: ", " }}

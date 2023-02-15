@@ -52,7 +52,7 @@ datacite:
     "@type": "Person"
   - name: "BP"
     email: "BP@mock.com"
-    "@id": "https://datahub.aida.scilifelab.se"
+    "@id": "https://"
     "@type": "Organization"
   dateCreated: "2020-11-19"
   datePublished: "2020-11-19"
@@ -65,7 +65,7 @@ datacite:
     cancer cases. 
   license:
   - name: "Controlled access"
-    id: "https://datahub.aida.scilifelab.se/10.23698/aida/brln#controlled-access"
+    id: "https://datahub.bp.mock.se/mock#controlled-access"
     "@type": "CreativeWork"
     abstract: |
       Free for use in legal and ethical medical diagnostics research.
@@ -124,13 +124,7 @@ position, X coordinates (and Y coordinates!) should therefore be multiplied with
 the image *width*.
 
 ## License
-### Controlled access
-Free for use in legal and ethical medical diagnostics research.
-Please contact the dataset provider for terms of access.
 
-{% include access-request-blurb.md coauthorship="yes" %}
-
-### License
 Copyright
 {{ page.datacite.copyrightYear }}
 {{ page.datacite.copyrightHolder | map: "name" |  join: ", " }}

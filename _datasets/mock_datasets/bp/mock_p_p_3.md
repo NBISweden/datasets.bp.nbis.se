@@ -49,7 +49,7 @@ datacite:
     "@type": "Person"
   - name: "BP"
     email: "BP@mock.com"
-    "@id": "https://datahub.aida.scilifelab.se"
+    "@id": "https://datahub.bp.mock.se"
     "@type": "Organization"
   dateCreated: "2023-02-05"
   datePublished: "2023-02-07"
@@ -60,7 +60,7 @@ datacite:
     2000 scanned prostate biopsies from 120 patient cases.
   license:
   - name: "Controlled access"
-    id: "https://datahub.aida.scilifelab.se/10.23698/aida/brln#controlled-access"
+    id: "https://datahub.bp.mock.se/mock#controlled-access"
     "@type": "CreativeWork"
     abstract: |
       Free for use in legal and ethical medical diagnostics research.
@@ -113,13 +113,12 @@ Images: Pyramidal .tif
 Metadata: .csv
 
 ## License
-### Controlled access
-Free for use in legal and ethical medical diagnostics research.
-Please contact the dataset provider for terms of access.
 
-{% include access-request-blurb.md coauthorship="yes" %}
 
-### License
+
+
+
+
 Copyright
 {{ page.datacite.copyrightYear }}
 {{ page.datacite.copyrightHolder | map: "name" |  join: ", " }}

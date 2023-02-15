@@ -12,7 +12,7 @@ We are aware that publications resulting from the use of this data must include 
 {% endif %}
 Dataset: {{ include.dataset_url }}
 
-Example agreement template: {{ include.agreement_template_url | default:"https://datahub.aida.scilifelab.se/sharing/templates/" }}
+Example agreement template: {{ include.agreement_template_url | default:"https://datahub.bp.mock.se/sharing/templates/" }}
 
 Template placeholders:
 
@@ -26,11 +26,10 @@ Institution postal address: POSTAL_ADDRESS
 Name of authorized signatory: SIGNATORY_NAME (cc here)
 Title of authorized signatory: SIGNATORY_TITLE
 
-Also, I would like to ALTERNATIVELY_WOULD_NOT_LIKE_TO be included in the public record of data sharing facilitated by AIDA:
+Also, I would like to ALTERNATIVELY_WOULD_NOT_LIKE_TO be included in the public record of data sharing facilitated by BP:
 
-https://docs.google.com/spreadsheets/d/1fl2BwZJ4rivOKzOCy5pAnxU8N1CyoF86BTCnH-rBV04
 
-which is used to facilitate scientific discussion, and to show what good AIDA has been to the global research community.
+which is used to facilitate scientific discussion, and to show what good BP has been to the global research community.
 
 (If "not", then only institution/department information will be included.)
 
