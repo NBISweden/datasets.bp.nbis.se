@@ -63,7 +63,9 @@
           <tr>
             <th>Age at extraction</th>
             <td>
-              <p>{{page.age_at_extraction}}</p> 
+               {% for link in page.age_at_extraction %}
+              <p>{{link}}</p>
+              {% endfor %} 
             </td>
           </tr>
           <tr>
@@ -91,7 +93,11 @@
           </tr>
           <tr>
             <th>Image resolution</th>
-            <td>{{ page.image_resolution}}</td>
+            <td>
+              {% for link in page.image_resolution %}
+              <p>{{link}}</p>
+              {% endfor %} 
+            </td>
           </tr>
           <tr>
             <th>Indirect access only</th>
