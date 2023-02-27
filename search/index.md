@@ -1,6 +1,6 @@
 ---
 title: "Landing page search"
-description: "Find datasets of interest on the Bigpicture.
+description: "Find datasets of interest on the Bigpicture."
 ---
 <h1>Note</h1>
 This is a demo of a very simple and coarse grained search function, that lets you find datasets based only on the information that the contributor has decided to put on their dataset description page.

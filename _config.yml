@@ -9,10 +9,20 @@ collections:
     output: true
     layout: "dataset.html"
     permalink: ":path"
+  parserdatasets:
+    output: true
+    layout: "parser_test.html"
+    permalink: ":path"
 
+  
 defaults:
   - scope:
       path: ""
       type: "datasets"
     values:
       layout: "dataset"
+  - scope:
+      path: ""
+      type: "parserdatasets"
+    values:
+      layout: "parser_test"

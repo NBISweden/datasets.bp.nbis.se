@@ -175,7 +175,30 @@
               Copyright {{ page.datacite.copyrightYear }} {{ page.datacite.copyrightHolder | map: "name" |  join: ", " }}
             </td>
           </tr>
-          
+          <tr>
+            <th>Sample attribute</th>
+            <td>
+              {{page.SAMPLE.SAMPLE_ATTRIBUTES}}
+            </td>
+          </tr>
+          <tr>
+            <th>Sample name</th>
+            <td>
+              {{page.SAMPLE.SAMPLE_NAME}}
+            </td>
+          </tr>
+          <tr>
+            <th>Alias</th>
+            <td>
+              {{page.SAMPLE.alias}}
+            </td>
+          </tr>
+          <tr>
+            <th>Center name</th>
+            <td>
+              {{page.SAMPLE.center_name}}
+            </td>
+          </tr>
         </table>
       </div>
       <h2 id="access-apply">Apply for access</h2>
