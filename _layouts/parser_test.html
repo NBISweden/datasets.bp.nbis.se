@@ -63,9 +63,7 @@
           <tr>
             <th>Age at extraction</th>
             <td>
-               {% for link in page.age_at_extraction %}
-              <p>{{link}}</p>
-              {% endfor %} 
+             <p> {{page.age_at_extraction[0]}}-{{page.age_at_extraction[1]}}</p>
             </td>
           </tr>
           <tr>
