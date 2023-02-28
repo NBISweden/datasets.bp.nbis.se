@@ -68,7 +68,11 @@
           </tr>
           <tr>
             <th>Anatomical site</th>
-            <td>{{ page.anatomical_site}}</td>
+            <td>
+              {% for item in page.anatomical_site %}
+            <p>{{item}}</p>
+              {% endfor %}
+            </td>
           </tr>
           <tr>
             <th>Animal species</th>
@@ -87,7 +91,11 @@
           </tr>
           <tr>
             <th>Extraction method</th>
-            <td>{{ page.extraction_method}}</td>
+            <td>
+              {% for item in page.extraction_method %}
+            <p>{{item}}</p>
+              {% endfor %}
+            </td>
           </tr>
           <tr>
             <th>Image resolution</th>
@@ -107,7 +115,13 @@
           </tr>
           <tr>
             <th>Staining name</th>
-            <td>{{page.staining_name}}</td>
+            <td>
+              {% for item in page.staining_name %}
+            <p>{{item}}</p>
+              {% endfor %}
+
+
+            </td>
           </tr>
         </table>
       </div>
