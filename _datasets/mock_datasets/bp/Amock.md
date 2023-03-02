@@ -76,6 +76,45 @@ datacite:
     #  "@id": "https://doi.org/..."
     #  name: "Title of paper goes here"
 other:
+  age_at_extraction:
+  - '45'
+  - '90'
+  anatomical_site:
+  - Skin structure of cheek (body structure)
+  - Skin structure of upper arm
+  - Skin structure of lower leg (body structure)
+  - Skin structure of back (body structure)
+  - Skin structure of hand (body structure)
+  - Skin appendage structure
+  - Skin of knee
+  animal_species:
+  - Homo sapiens
+  block_preparation: []
+  bp_image_type:
+  - Brightfield
+  extraction_method:
+  - Biopsy
+  - Scraping
+  - Excision
+  image_resolution:
+  - 0.00022984807042544878
+  - 0.00046104195481788847
+  indirect_access_only: 'False'
+  specimen_type:
+  - Histopathology
+  staining_name:
+  - "KIR\xD6D" 
+  - KI67
+  - P16
+  - hematoxylin stain,water soluble eosin stain
+  - "SOXR\xD6D"
+  - CK18
+  - MELAN
+  - HSV1
+  - HSV2
+  - CKAE
+  - SOX10
+  - HMB,
   shortName: "MD1"
   status: "Ongoing"
   annotation: |
@@ -92,7 +131,6 @@ other:
   bytes: 2363159897649  # 2.4 TB
   numberOfScans: 4462
   numberOfAnnotations: 0
-  resolution: "20x"
   modality:
   - "SM"
   scanner:
@@ -100,7 +138,6 @@ other:
   - Hamamatsu NanoZoomer XR
   - Hamamatsu NanoZoomer S360
   - Hamamatsu NanoZoomer S60
-  stain: "Hematoxylin and eosin. In sentinel node cases also immunohistochemical stain  for cytokeratin AE1/AE3."
   image: "/assets/images/mock_datasets/bp/m_p_b/ckae-metastasis-thumbnail.jpeg"
   exampleImage:
   - title: "Overview of whole slide imaging with hematoxylin and eosin staining."

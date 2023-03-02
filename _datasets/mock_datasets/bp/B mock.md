@@ -75,6 +75,26 @@ datacite:
     abstract: "Free for use within BP with attribution."
  
 other:
+  age_at_extraction:
+  - '70'
+  - '75'
+  anatomical_site:
+  - Skin structure of cheek (body structure)
+  animal_species:
+  - Homo sapiens
+  block_preparation: []
+  bp_image_type:
+  - Brightfield
+  extraction_method:
+  - Biopsy
+  image_resolution:
+  - 0.00022990091270662345
+  - 0.00022990091270662345
+  indirect_access_only: 'False'
+  specimen_type:
+  - 'Histopathology '
+  staining_name:
+  - hematoxylin stain,water soluble eosin stain
   shortName: "MD2"
   status: "Completed"
   annotation: No in-image annotations available. Additional information at case level

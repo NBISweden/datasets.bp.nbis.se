@@ -64,13 +64,69 @@
           <tr>
             <th>Mode of Access</th>
             <td>
-              <p>{{page.access}}</p> 
+              <p>{{page.other.indirect_access_only}}</p> 
             </td>
+          </tr>
+          <tr>
+            <th>Title</th>
+            <td>{{ page.datacite.name }}</td>
           </tr>
           <tr>
             <th>Short name</th>
             <td>{{ page.other.shortName }}</td>
           </tr>
+          <tr>
+            <th>Age at extraction</th>
+            <td>
+             <p> {{page.other.age_at_extraction[0]}}-{{page.other.age_at_extraction[1]}}</p>
+            </td>
+          </tr>
+          <tr>
+            <th>Anatomical site</th>
+            <td>
+              {% for item in page.other.anatomical_site %}
+            <p>{{item}}</p>
+              {% endfor %}
+            </td>
+          </tr>
+          <tr>
+            <th>Animal species</th>
+            <td>{{page.other.animal_species}} </td>
+          </tr>
+          <tr>
+            <th>Block preparation</th>
+            <td>{{ page.other.block_preparation }}</td>
+            <tr>
+          </tr>
+          <tr>
+            <th>BP image type</th>
+            <td>
+              {{page.other.bp_image_type}}
+            </td>
+          </tr>
+          <tr>
+            <th>Extraction method</th>
+            <td>
+              {% for item in page.other.extraction_method %}
+            <p>{{item}}</p>
+              {% endfor %}
+            </td>
+          </tr>
+          <tr>
+            <th>Specimen type</th>
+            <td>{{page.other.specimen_type}}</td>
+          </tr>
+          <tr>
+            <th>Stain</th>
+            <td>
+              {% for item in page.other.staining_name %}
+            <p>{{item  }}</p>
+              {% endfor %}
+
+
+            </td>
+          </tr>
+          <tr>
           <tr>
             <th>Cite as</th>
             <td>
@@ -93,14 +149,8 @@
               {% endfor %}
             </td>
           </tr>
-          <tr>
-            <th>Age span</th>
-            <td>{{ page.other.age-span }}</td>
-          </tr>
-          <tr>
-            <th>Title</th>
-            <td>{{ page.datacite.name }}</td>
-          </tr>
+          
+         
           <tr>
             <th>Author</th>
             <td>
@@ -139,7 +189,11 @@
           </tr>
           <tr>
             <th>Resolution</th>
-            <td>{{ page.other.resolution }}</td>
+            <td>
+              {% for link in page.other.image_resolution %}
+              <p>{{link}}</p>
+              {% endfor %} 
+            </td>
           </tr>
           <tr>
             <th>Modality</th>
@@ -155,10 +209,7 @@
               {{ page.other.scanner | join: "<br/>" }}<br/>
             </td>
           </tr>
-          <tr>
-            <th>Stain</th>
-            <td>{{ page.other.stain }}</td>
-          </tr>
+          
         <tr>
             <th>References</th>
             <td>
