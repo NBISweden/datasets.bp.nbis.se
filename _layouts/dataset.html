@@ -127,13 +127,25 @@
             </td>
           </tr>
           <tr>
+            <th>Resolution</th>
+            <td>
+              {% for link in page.other.image_resolution %}
+              <p>{{link}}</p>
+              {% endfor %} 
+            </td>
+          </tr>
+          <tr>
+            <th>Scanner</th>
+            <td>
+              {{ page.other.scanner | join: "<br/>" }}<br/>
+            </td>
+          </tr>
+          <tr>
           <tr>
             <th>Cite as</th>
             <td>
               {{ page.datacite.author | map: "name" | array_to_sentence_string }}
-              ({{ page.datacite.datePublished | date: "%Y" }})
               {{ page.datacite.name}}
-              <a href="{{ page.datacite["@id"] }}">doi:{{ doi }}</a>
             </td>
           </tr>
           <tr>
@@ -161,11 +173,11 @@
           </tr>
           <tr>
             <th>Year</th>
-            <td>{{ page.datacite.datePublished | date: "%Y" }}</td>
+            <td></td>
           </tr>
           <tr>
             <th>DOI</th>
-            <td><a href='{{ page.datacite["@id"] }}'>doi:{{ doi }}</a></td>
+            <td><a href='{{ page.datacite["@id"] }}'></a></td>
           </tr>
           <tr>
             <th>Status</th>
@@ -187,14 +199,7 @@
             <th>Size</th>
             <td>{% include human_friendly_filesize bytes=page.other.bytes %}</td>
           </tr>
-          <tr>
-            <th>Resolution</th>
-            <td>
-              {% for link in page.other.image_resolution %}
-              <p>{{link}}</p>
-              {% endfor %} 
-            </td>
-          </tr>
+          
           <tr>
             <th>Modality</th>
             <td>
@@ -203,12 +208,7 @@
               {% endfor %}
             </td>
           </tr>
-          <tr>
-            <th>Scanner</th>
-            <td>
-              {{ page.other.scanner | join: "<br/>" }}<br/>
-            </td>
-          </tr>
+          
           
         <tr>
             <th>References</th>
@@ -223,7 +223,7 @@
           <tr>
             <th>Copyright</th>
             <td>
-              Copyright {{ page.datacite.copyrightYear }} {{ page.datacite.copyrightHolder | map: "name" |  join: ", " }}
+            
             </td>
           </tr>
           <tr>

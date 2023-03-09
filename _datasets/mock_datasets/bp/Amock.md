@@ -3,33 +3,12 @@ hidden: no
 datacite:
   "@context": "http://schema.org"
   "@type": "Dataset"
-  "@id": "https://doi.org/10.123/k0-ja2ryl"
-  name: "Mock data 1"
-  about: "Pathology"
-  url: "https:/.Mock"
-  author:
-  - name: "Person 1"
-    #"@id": # FIXME: missing info
-    "@type": "Person"
-  - name: "Person 2"
-    "@id": "https://orcid.org/0"
-    "@type": "Person"
-  - name: "Person 3"
-    "@id": "https://orcid.org/0"
-    "@type": "Person"
-  - name: "Person 4"
-    "@id": "https://orcid.org/0"
-    "@type": "Person"
-  - name: "Person 4"
-    "@id": "https://orcid.org/0"
-    "@type": "Person"
-  - name: "Person 5"
-    "@id": "https://orcid.org/0"
-    "@type": "Person"
+  "@id": 
+  name: "Mock data from YAML 1"
   publisher:
     "@type": "Organization"
     name: "BP"
-  copyrightYear: 2020
+  copyrightYear: 
   copyrightHolder:
   - name: "University 1"
     url: "https://uni1.se/"
@@ -58,7 +37,7 @@ datacite:
   datePublished: "2020-11-19"
   dateModified: "2020-11-21"
   keywords: "Pathology, Whole slide imaging, Breast, Lymph nodes, Cancer, Sentinel nodes, Immunohistochemical staining, cytokeratin, CKAE1/AE3"
-  version: "1.0.2"
+  version:
   # v1.0.2 2020-07-05: Update size in bytes.
   description: |
     Whole slide imaging of 396 full cases of axillary lymph nodes in breast
@@ -116,7 +95,7 @@ other:
   - SOX10
   - HMB,
   shortName: "MD1"
-  status: "Ongoing"
+  status:
   annotation: |
     No in-image annotations available. Additional information at case level
     available on request.
@@ -125,14 +104,11 @@ other:
   - "NO"
   - "SE"
   organ:
-  - name: "Breast"
-    sctid: 38498374 # SNOMED-CT https://termbrowser.nhs.uk/?perspective=full&conceptId1=%s
   age-span: "-"
-  bytes: 2363159897649  # 2.4 TB
-  numberOfScans: 4462
-  numberOfAnnotations: 0
+  bytes:
+  numberOfScans:
+  numberOfAnnotations:
   modality:
-  - "SM"
   scanner:
   - Aperio ScanScope AT
   - Hamamatsu NanoZoomer XR

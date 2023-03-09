@@ -4,28 +4,10 @@ datacite:
   "@context": "http://schema.org"
   "@type": "Dataset"
   "@id": "https://doi.org/10.123/xx42r178i"
-  name: "Mock data 2"
-  about: "Pathology"
+  name: "Mock data from YAML 2"
+  about: 
   url: "https:/.Mock"
   author:
-  - name: "Person 1"
-    #"@id": # FIXME: missing info
-    "@type": "Person"
-  - name: "Person 2"
-    "@id": "https://orcid.org/0"
-    "@type": "Person"
-  - name: "Person 3"
-    "@id": "https://orcid.org/0"
-    "@type": "Person"
-  - name: "Person 4"
-    "@id": "https://orcid.org/0"
-    "@type": "Person"
-  - name: "Person 4"
-    "@id": "https://orcid.org/0"
-    "@type": "Person"
-  - name: "Person 5"
-    "@id": "https://orcid.org/0"
-    "@type": "Person"
   publisher:
     "@type": "Organization"
     name: "BP"
@@ -58,7 +40,7 @@ datacite:
   datePublished: "2019-11-19"
   dateModified: "2019-11-21"
   keywords: "Pathology, Colon, Cancer, Whole slide imaging, Annotated"
-  version: "1.1.0"
+  version:
   # v1.1.0 2020-11-27: Add citation.
   # v1.0.2 2020-07-05: Update size in bytes.
   description: |
@@ -96,7 +78,7 @@ other:
   staining_name:
   - hematoxylin stain,water soluble eosin stain
   shortName: "MD2"
-  status: "Completed"
+  status: 
   annotation: No in-image annotations available. Additional information at case level
     available on request.    
   countries-shared:
@@ -105,15 +87,12 @@ other:
     - "NO"
     - "SE"
   organ:
-  - name: "Colon"
-    sctid: BBV3
   age-span: "22-90 years"
-  bytes: 49227373916 # 49 GB
-  numberOfScans: 101
-  numberOfAnnotations: 756
+  bytes:
+  numberOfScans:
+  numberOfAnnotations: 
   resolution: "20X and 40X single plane"
   modality:
-  - "SM"
   scanner:
   - "Scanscope AT (Aperio, US)"
   - "NanoZoomer XR (Hamamatsu, Japan)" # FIXME: is this same as "Hamamatsu NanoZoomer-XR C12000 series 2013"?
