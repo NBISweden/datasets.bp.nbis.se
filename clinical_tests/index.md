@@ -3,13 +3,13 @@ title: "Bigpicture Datasets using YAML parser"
 description: "YAML parser datasets"
 ---
 
-Suspendisse potenti. Curabitur quis finibus quam. Morbi sagittis purus leo, vitae rhoncus risus interdum a. Maecenas quis erat nec dolor condimentum facilisis eu sit amet felis. Proin convallis semper pulvinar. In hac habitasse platea dictumst. Sed quis sollicitudin massa. Nam sollicitudin arcu ac leo tincidunt interdum. 
+The following datasets are the pilot clinical datasets uploaded to the Big picture archive.
 
-## Datasets on Bigpicture using YAML parser
+## Clinical datasets uploaded to Big picture archive
 
 <div class="dataset-table">
   <table>
-    {% for d in site.parserdatasets %}
+    {% for d in site.clinicaldatasets %}
       {% if d.hidden %}{% continue  %}{% endif %}
       <tr>
         <td><a href="{{site.baseurl}}{{ d.url }}"><img src="{{site.baseurl}}{{ d.image | default: d.exampleImage[0].thumbnail-url | default: dexampleImage[0].url }}"></a></td>

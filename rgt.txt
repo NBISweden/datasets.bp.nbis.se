@@ -1,0 +1,12 @@
+<div class="dataset-table">
+                            <table>
+                                {{ range where .Site.Pages "Type" "dataset"}}
+                                
+                                 <tr>
+                                  <td>
+                                    <a href="{{ .RelPermalink }}" >{{ .Params.name }}</a><br/>
+                                     </td>
+                                </tr>
+                                {{ end }}
+                            </table>
+                          </div

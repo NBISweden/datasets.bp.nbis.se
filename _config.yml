@@ -9,9 +9,9 @@ collections:
     output: true
     layout: "dataset.html"
     permalink: ":path"
-  parserdatasets:
+  clinicaldatasets:
     output: true
-    layout: "parser_test.html"
+    layout: "clinical_test.html"
     permalink: ":path"
 
   
@@ -23,6 +23,6 @@ defaults:
       layout: "dataset"
   - scope:
       path: ""
-      type: "parserdatasets"
+      type: "clinicaldatasets"
     values:
-      layout: "parser_test"
+      layout: "clinical_test"
