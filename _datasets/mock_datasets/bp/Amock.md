@@ -21,7 +21,7 @@ datacite:
     id: "https://"
   citation: Karin Lindman, Jerónimo F. Rose, Martin Lindvall, and Caroline Bivik Stadler (2019), Skin data. Big Picture doi:10.23698/aida/drsk.
   references: 
-    name: Stadler, C.B., Lindvall, M., Lundström, C. et al. Proactive Construction of an Annotated Imaging Database for Artificial Intelligence Training. J Digit Imaging (2020). https://doi.org/10.1007/s10278-020-00384-4
+  - Stadler, C.B., Lindvall, M., Lundström, C. et al. Proactive Construction of an Annotated Imaging Database for Artificial Intelligence Training. J Digit Imaging (2020). https://doi.org/10.1007/s10278-020-00384-4
   access_time: Unlimited time
 other:
   diagnosis: Actinic keratosis, basal cell carcinoma and, dermatofibroma + benign cases
