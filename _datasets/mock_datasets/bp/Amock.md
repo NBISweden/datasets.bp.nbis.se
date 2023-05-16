@@ -4,43 +4,12 @@ datacite:
   "@context": "http://schema.org"
   "@type": "Dataset"
   "@id": 
-  name: "Mock data from YAML 1"
-  publisher:
-    "@type": "Organization"
-    name: "BP"
-  copyrightYear: 
-  copyrightHolder:
-  - name: "University 1"
-    url: "https://uni1.se/"
-    "@type": "Organization"
-  - name: "person 1"
-    "@id": "https://orcid.org/0"
-    "@type": "Person"
-  provider:
-  - name: "Person 2"
-    email: "person1@uni1.se"
-    "@id": "https://orcid.org/0"
-    "@type": "Person"
-  - name: "person 3"
-    email: "person3@uni1.se"
-    #"@id": "" # FIXME: missing info
-    "@type": "Person"        
-  - name: "Person 4"
-    email: "Person4@uni1.se"
-    "@id": "https://orcid.org/0"
-    "@type": "Person"
-  - name: "BP"
-    email: "BP@mock.com"
-    "@id": "https://"
-    "@type": "Organization"
-  dateCreated: "2020-11-19"
-  datePublished: "2020-11-19"
-  dateModified: "2020-11-21"
+  name: "Skin data"
+  yearPublished: "2019"
   keywords: "Pathology, Whole slide imaging, Breast, Lymph nodes, Cancer, Sentinel nodes, Immunohistochemical staining, cytokeratin, CKAE1/AE3"
-  version:
-  # v1.0.2 2020-07-05: Update size in bytes.
+  version: v1.0.2 
   description: |
-    Whole slide imaging of 396 full cases of axillary lymph nodes in breast
+    Whole slide imaging of 150 full cases of skin.
     cancer cases. 
   license:
   - name: "Controlled access"
@@ -50,11 +19,21 @@ datacite:
       Free for use in legal and ethical medical diagnostics research.
   - name: "Big picture license"
     id: "https://"
-  citation:
-    #- "@type": "CreativeWork"
-    #  "@id": "https://doi.org/..."
-    #  name: "Title of paper goes here"
+  citation: Karin Lindman, Jerónimo F. Rose, Martin Lindvall, and Caroline Bivik Stadler (2019), Skin data. Big Picture doi:10.23698/aida/drsk.
+  references: 
+    name: Stadler, C.B., Lindvall, M., Lundström, C. et al. Proactive Construction of an Annotated Imaging Database for Artificial Intelligence Training. J Digit Imaging (2020). https://doi.org/10.1007/s10278-020-00384-4
+  access_time: Unlimited time
 other:
+  diagnosis: Actinic keratosis, basal cell carcinoma and, dermatofibroma + benign cases
+  geographical_area: Europe
+  number_of_images: 150
+  number_of_cases: 100
+  number_of_biological_beings: 2
+  number_of_observations: 50
+  comments: "One physician was responsible for the manual annotations controlled by a second pathologist. Accurate annotations were made over the whole tissues. 16741 separate annotations were made."
+  metadata_version: v0.1.2
+  changelog: "1.1.0 The benign images in the dataset were annoteted."
+  center_name: Region Ostergotland, Sweden
   age_at_extraction:
   - '45'
   - '90'
@@ -94,21 +73,19 @@ other:
   - CKAE
   - SOX10
   - HMB,
-  shortName: "MD1"
+  shortName: "SD1"
   status:
-  annotation: |
-    No in-image annotations available. Additional information at case level
-    available on request.
+  annotation: "YES"
   countries-shared:
   - "FI"
   - "NO"
   - "SE"
   organ:
   age-span: "-"
-  bytes:
+  bytes: 5,497,558,138,880
   numberOfScans:
   numberOfAnnotations:
-  modality:
+  modality: Immunohistochemistry
   scanner:
   - Aperio ScanScope AT
   - Hamamatsu NanoZoomer XR

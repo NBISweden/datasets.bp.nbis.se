@@ -61,14 +61,10 @@
       <h2>Dataset information</h2>
       <div class="info-box">
         <table>
-          <tr>
-            <th>Mode of Access</th>
-            <td>
-              <p>{{page.other.indirect_access_only}}</p> 
-            </td>
+
           </tr>
           <tr>
-            <th>Title</th>
+            <th>Name of the dataset</th>
             <td>{{ page.datacite.name }}</td>
           </tr>
           <tr>
@@ -76,10 +72,8 @@
             <td>{{ page.other.shortName }}</td>
           </tr>
           <tr>
-            <th>Age at extraction</th>
-            <td>
-             <p> {{page.other.age_at_extraction[0]}}-{{page.other.age_at_extraction[1]}}</p>
-            </td>
+            <th>Animal species</th>
+            <td>{{page.other.animal_species}} </td>
           </tr>
           <tr>
             <th>Anatomical site</th>
@@ -90,20 +84,20 @@
             </td>
           </tr>
           <tr>
-            <th>Animal species</th>
-            <td>{{page.other.animal_species}} </td>
+            <th>Diagnosis</th>
+            <td>{{page.other.diagnosis}} </td>
           </tr>
           <tr>
-            <th>Block preparation</th>
-            <td>{{ page.other.block_preparation }}</td>
-            <tr>
-          </tr>
-          <tr>
-            <th>BP image type</th>
+            <th>Age at extraction</th>
             <td>
-              {{page.other.bp_image_type}}
+             <p> {{page.other.age_at_extraction[0]}}-{{page.other.age_at_extraction[1]}}</p>
             </td>
           </tr>
+          <tr>
+            <th>Geographical area</th>
+            <td>{{page.other.geographical_area}} </td>
+          </tr>
+          <tr>
           <tr>
             <th>Extraction method</th>
             <td>
@@ -117,14 +111,54 @@
             <td>{{page.other.specimen_type}}</td>
           </tr>
           <tr>
-            <th>Stain</th>
+            <th>Modality</th>
+            <td>
+              {% for m in page.other.modality %}
+                {% include modality-title.html modality=m %}<br/>
+              {% endfor %}
+            </td>
+          </tr>
+          <tr>
+            <th>BP image type</th>
+            <td>
+              {{page.other.bp_image_type}}
+            </td>
+          </tr>       
+          <tr>
+            <th>Staining information</th>
             <td>
               {% for item in page.other.staining_name %}
             <p>{{item  }}</p>
               {% endfor %}
-
-
             </td>
+          </tr>
+          <tr>
+            <th>Total number of whole slide images(WSI)</th>
+            <td>
+              {{page.other.number_of_images}}
+            </td>
+          </tr>
+          <tr>
+            <th>Number of cases</th>
+            <td>
+              {{page.other.number_of_cases}}
+            </td>
+          </tr>
+          <tr>
+            <th>Number of biological beings</th>
+            <td>
+              {{page.other.number_of_biological_beings}}
+            </td>
+          </tr>
+          <tr>
+            <th>Number of observations</th>
+            <td>
+              {{page.other.number_of_observations}}
+            </td>
+          </tr>
+          <tr>
+            <th>Total size of the dataset (bytes)</th>
+            <td>{{ page.other.bytes }}</td>
           </tr>
           <tr>
             <th>Resolution</th>
@@ -134,122 +168,63 @@
               {% endfor %} 
             </td>
           </tr>
-          <tr>
-            <th>Scanner</th>
-            <td>
-              {{ page.other.scanner | join: "<br/>" }}<br/>
-            </td>
+        <tr>
+            <th>Annotations</th>
+            <td>{{ page.other.annotation }}</td>
           </tr>
           <tr>
-          <tr>
-            <th>Cite as</th>
-            <td>
-              {{ page.datacite.author | map: "name" | array_to_sentence_string }}
-              {{ page.datacite.name}}
-            </td>
+            <th>Year of submission</th>
+            <td>{{ page.datacite.yearPublished }}</td>
           </tr>
           <tr>
-            <th>Field</th>
-            <td>{{ page.datacite.about }}</td>
-            <tr>
+            <th>Comments</th>
+            <td>{{page.other.comments}}</td>
           </tr>
           <tr>
-            <th>Organ</th>
-            <td>
-              {% for organ in page.other.organ %}
-                <a href="https://termbrowser.nhs.uk/?perspective=full&conceptId1={{ organ.sctid }}">{{ organ.name }}</a><br/>
-              {% endfor %}
-            </td>
-          </tr>
-          
-         
-          <tr>
-            <th>Author</th>
-            <td>
-              {% for a in page.datacite.author %}{% assign url=a["@id"] %}
-                {% include link_if_url.html text=a.name url=url %}<br/>
-              {% endfor %}
-            </td>
-          </tr>
-          <tr>
-            <th>Year</th>
-            <td></td>
-          </tr>
-          <tr>
-            <th>DOI</th>
-            <td><a href='{{ page.datacite["@id"] }}'></a></td>
-          </tr>
-          <tr>
-            <th>Status</th>
-            <td>{{ page.other.status }}</td>
-          </tr>
-          <tr>
-            <th>Version</th>
+            <th>Dataset version</th>
             <td>{{ page.datacite.version }}</td>
           </tr>
           <tr>
-            <th>Scans</th>
-            <td>{{ page.other.numberOfScans }}</td>
+            <th>Metadata standard version</th>
+            <td>{{page.other.metadata_version}}</td>
           </tr>
           <tr>
-            <th>Annotations</th>
-            <td>{{ page.other.numberOfAnnotations }}</td>
+            <th>Change log summary</th>
+            <td>{{page.other.changelog}}</td>
           </tr>
           <tr>
-            <th>Size</th>
-            <td>{% include human_friendly_filesize bytes=page.other.bytes %}</td>
+            <th>Center name</th>
+            <td>{{page.other.center_name}}</td>
           </tr>
-          
           <tr>
-            <th>Modality</th>
+            <th>Cite as</th>
             <td>
-              {% for m in page.other.modality %}
-                {% include modality-title.html modality=m %}<br/>
-              {% endfor %}
+              {{ page.datacite.citation}}
             </td>
           </tr>
-          
-          
-        <tr>
+          <tr>
             <th>References</th>
             <td>
               <ol class="references">
-              {% for r in page.datacite.citation %}
-                <li><a href="{{ r['@id'] }}">{{ r.name }}</a></li>
+              {% for r in page.datacite.references %}
+                <li><a>{{ r }}</a></li>
               {% endfor %}
             </ol>
             </td>
           </tr>
           <tr>
-            <th>Copyright</th>
+            <th>Type of Access</th>
             <td>
-            
+              <p>{{page.other.indirect_access_only}}</p> 
             </td>
+          <tr>
+            <th>Access duration</th>
+            <td>{{page.datacite.access_time}}</td>
           </tr>
           <tr>
-            <th>Sample attribute</th>
-            <td>
-              {{page.SAMPLE.SAMPLE_ATTRIBUTES}}
-            </td>
-          </tr>
-          <tr>
-            <th>Sample name</th>
-            <td>
-              {{page.SAMPLE.SAMPLE_NAME}}
-            </td>
-          </tr>
-          <tr>
-            <th>Alias</th>
-            <td>
-              {{page.SAMPLE.alias}}
-            </td>
-          </tr>
-          <tr>
-            <th>Center name</th>
-            <td>
-              {{page.SAMPLE.center_name}}
-            </td>
-          </tr>
+            <th>License</th>
+            <td><a>License information</a></td>
+          </tr>         
         </table>
       </div>
       <h2 id="access-apply">Apply for access</h2>
