@@ -39,7 +39,8 @@ datacite:
   dateCreated: "2019-11-19"
   datePublished: "2019-11-19"
   dateModified: "2019-11-21"
-  keywords: "Pathology, Colon, Cancer, Whole slide imaging, Annotated"
+  bullet_keywords: "Pathology, Whole slide imaging, Breast, Lymph nodes, Cancer, Sentinel nodes, Immunohistochemical staining, 
+  cytokeratin, CKAE1/AE3, Colon, Whole slide imaging, Annotated"
   version:
   # v1.1.0 2020-11-27: Add citation.
   # v1.0.2 2020-07-05: Update size in bytes.

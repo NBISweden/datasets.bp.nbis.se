@@ -46,7 +46,13 @@
       {% endif %}
       {{ page.datacite.description | markdownify }}
       <p>Keywords: {{ page.datacite.keywords }}.</p>
-
+      
+      <ul>
+      {% assign bkeys = page.datacite.bullet_keywords  | split: ", " %}
+      {% for kw in bkeys %}
+          <li>{{ kw }}</li> 
+      {% endfor %}
+      </ul>
       <h2>Sample images</h2>
       <p>Sample images with reduced image quality. Please click to preview.</p>
 
