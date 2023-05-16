@@ -231,6 +231,8 @@ table.aida-data-sharing-overview td:first-child::before {
   padding: 1rem;
   text-align: center;
 }
+
+.main-content table th, .main-content table td { padding: 0.5rem 1rem; border: 1px solid #8e8e8e; }
 // - Metrics page -------------------------------------------------------------
 
 // Making mouseover hover styles for member countries on the map, eg:
