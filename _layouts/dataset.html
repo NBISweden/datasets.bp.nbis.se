@@ -33,7 +33,7 @@
     {% include navbar.html %}
     <header class="page-header" role="banner">
       <h1 class="project-name">{{ page.datacite.name }}</h1>
-      <h2 class="project-tagline no-anchor">doi:{{ doi }}</h2>
+      <h2 class="project-tagline no-anchor">doi:{{ page.other.doi }}</h2>
       <p><a href="/">{{ site.title }}</a> facilitating FAIR data sharing for medical imaging diagnostics AI.</p>
     </header>
 
@@ -67,6 +67,10 @@
             <th>Name of the dataset</th>
             <td>{{ page.datacite.name }}</td>
           </tr>
+          <tr>
+            <th>Dataset ID</th>
+            <td>{{ page.datacite.dataset_id }}</td>
+          </tr
           <tr>
             <th>Short name</th>
             <td>{{ page.other.shortName }}</td>

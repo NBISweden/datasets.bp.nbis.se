@@ -1,6 +1,7 @@
 ---
 hidden: no
 datacite:
+  dataset_id: adre-dafde
   "@context": "http://schema.org"
   "@type": "Dataset"
   "@id": 
@@ -19,7 +20,7 @@ datacite:
       Free for use in legal and ethical medical diagnostics research.
   - name: "Big picture license"
     id: "https://"
-  citation: Karin Lindman, Jerónimo F. Rose, Martin Lindvall, and Caroline Bivik Stadler (2019), Skin data. Big Picture doi:10.23698/aida/drsk.
+  citation: Karin Lindman, Jerónimo F. Rose, Martin Lindvall, and Caroline Bivik Stadler (2019), Skin data. Big Picture doi:10.0001/adre-dafde.
   references: 
   - Stadler, C.B., Lindvall, M., Lundström, C. et al. Proactive Construction of an Annotated Imaging Database for Artificial Intelligence Training. J Digit Imaging (2020). https://doi.org/10.1007/s10278-020-00384-4
   access_time: Unlimited time
@@ -34,6 +35,7 @@ other:
   metadata_version: v0.1.2
   changelog: "1.1.0 The benign images in the dataset were annoteted."
   center_name: Region Ostergotland, Sweden
+  doi: 10.0001/adre-dafde
   age_at_extraction:
   - '45'
   - '90'
