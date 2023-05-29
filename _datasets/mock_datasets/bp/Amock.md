@@ -29,7 +29,7 @@ other:
   geographical_area: Europe
   number_of_images: 150
   number_of_cases: 100
-  number_of_biological_beings: 2
+  number_of_biological_beings: 50
   number_of_observations: 50
   comments: "One physician was responsible for the manual annotations controlled by a second pathologist. Accurate annotations were made over the whole tissues. 16741 separate annotations were made."
   metadata_version: v0.1.2
@@ -109,11 +109,6 @@ other:
     thumbnail-url: "/assets/images/mock_datasets/bp/m_p_b/ckae-metastasis-thumbnail.jpeg"
 access: Direct
 ---
-## File formats
-### Pixel position scaling
-Coordinates given are relative to the image *width*. To get the correct pixel
-position, X coordinates (and Y coordinates!) should therefore be multiplied with
-the image *width*.
 
 ## License
 

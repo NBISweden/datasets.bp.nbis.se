@@ -70,23 +70,38 @@
 
           </tr>
           <tr>
-            <th>Name of the dataset</th>
+            <th> Name of the dataset<a class="hover-text" > <img id="info-icon" src="{{site.baseurl}}/assets/images/info-icon.png">
+              <span class="tooltip-text"  >The name of the dataset.</span>
+            </a>
+            </th>
             <td>{{ page.datacite.name }}</td>
           </tr>
           <tr>
-            <th>Dataset ID</th>
-            <td>{{ page.datacite.dataset_id }}</td>
-          </tr
-          <tr>
-            <th>Short name</th>
+            <th>Short name
+              <a class="hover-text" > <img id="info-icon" src="{{site.baseurl}}/assets/images/info-icon.png">
+                <span class="tooltip-text">Short name of the dataset.</span>
+              </a>
+            </th>
             <td>{{ page.other.shortName }}</td>
           </tr>
           <tr>
-            <th>Animal species</th>
+            <th>Center name</th>
+            <td>{{page.other.doi}}</td>
+          </tr>
+          <tr>
+            <th>Animal species
+              <a class="hover-text" > <img id="info-icon" src="{{site.baseurl}}/assets/images/info-icon.png">
+                <span class="tooltip-text">Species of the biological being + SNOMED CT code if applicable.</span>
+              </a>
+            </th>
             <td>{{page.other.animal_species}} </td>
           </tr>
           <tr>
-            <th>Anatomical site</th>
+            <th>Anatomical site
+              <a class="hover-text" > <img id="info-icon" src="{{site.baseurl}}/assets/images/info-icon.png">
+                <span class="tooltip-text">The anatomical site the dataset specimens originate from + SNOMED CT organ code if applicable.</span>
+              </a>
+            </th>
             <td>
               {% for item in page.other.anatomical_site %}
             <p>{{item}}</p>
@@ -138,7 +153,8 @@
             <th>Staining information</th>
             <td>
               {% for item in page.other.staining_name %}
-            <p>{{item  }}</p>
+            <p>{{item}}
+            </p>
               {% endfor %}
             </td>
           </tr>
@@ -187,10 +203,6 @@
             <td>{{ page.datacite.yearPublished }}</td>
           </tr>
           <tr>
-            <th>Comments</th>
-            <td>{{page.other.comments}}</td>
-          </tr>
-          <tr>
             <th>Dataset version</th>
             <td>{{ page.datacite.version }}</td>
           </tr>
@@ -223,15 +235,6 @@
             </td>
           </tr>
           <tr>
-            <th>Type of Access</th>
-            <td>
-              <p>{{page.other.indirect_access_only}}</p> 
-            </td>
-          <tr>
-            <th>Access duration</th>
-            <td>{{page.datacite.access_time}}</td>
-          </tr>
-          <tr>
             <th>License</th>
             <td><a>License information</a></td>
           </tr>         
@@ -241,11 +244,39 @@
       If you are interested to access data, apply through clicking link below.
     </br>
       <a href="{{site.baseurl}}/access" class="button">Apply for access</a>
-      <h2 id="annotation">Annotation</h2>
-      {{ page.other.annotation | markdownify }}
+
+      <h2>Comments</h2>
+      Donec nibh elit, tincidunt eget vulputate ac, consequat in ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras interdum enim at libero sodales finibus. Donec vitae lorem quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus eget orci vulputate quam porttitor dignissim. Maecenas commodo, nibh et iaculis blandit, leo arcu scelerisque tortor, id porttitor metus tortor commodo quam. Vivamus a dapibus ipsum, eu euismod elit.
+
+      <h2>Terms of use</h2>
+      <div class="info-box">
+        
+        <table>
+          <tr>
+            <th>Type of access</th>
+            <td>Direct access</td>
+          </tr>
+          <tr>
+            <th>Permitted use/purposes</th>
+            <td>-</td>
+          </tr>
+          <tr>
+            <th>Access approval process</th>
+            <td>-</td>
+          </tr>
+          <tr>
+            <th>Use restrictions</th>
+            <td>None</td>
+          </tr>
+          <tr>
+            <th>Allowed Geographical distribution</th>
+            <td>Worldwide</td>
+          </tr>        
+        </table>
+        
 
       {{ content }}
-
+      
       {% include footer.html %}
     </main>
     <script src="{{site.baseurl}}/assets/js/anchor.min.js"></script>
