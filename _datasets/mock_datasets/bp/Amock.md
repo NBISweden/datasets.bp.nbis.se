@@ -9,9 +9,8 @@ datacite:
   yearPublished: "2019"
   keywords: "Pathology, Whole slide imaging, Breast, Lymph nodes, Cancer, Sentinel nodes, Immunohistochemical staining, cytokeratin, CKAE1/AE3"
   version: v1.0.2 
-  description: |
-    Whole slide imaging of 150 full cases of skin.
-    cancer cases. 
+  description: "The dataset consists of 99 H&E-stained whole slide skin images (WSI) - 49 abnormal and 50 normal cases. All significant abnormal findings identified are outlined and categorized into 13 types such as actinic keratosis, basal cell carcinoma and dermatofibroma. Other tissue components, such as epidermis, adnexal structures, as well as the surgical margin are delineated to create a complete histological map. In total, 16741 separate annotations have been made to segment the different tissue structures and link them to ontological information."
+
   license:
   - name: "Controlled access"
     id: "https://datahub.bp.mock.se/mock#controlled-access"
@@ -30,7 +29,7 @@ other:
   number_of_images: 150
   number_of_cases: 100
   number_of_biological_beings: 50
-  number_of_observations: 50
+  number_of_observations: 
   comments: "One physician was responsible for the manual annotations controlled by a second pathologist. Accurate annotations were made over the whole tissues. 16741 separate annotations were made."
   metadata_version: v0.1.2
   changelog: "1.1.0 The benign images in the dataset were annoteted."
@@ -54,7 +53,6 @@ other:
   - Brightfield
   extraction_method:
   - Biopsy
-  - Scraping
   - Excision
   image_resolution:
   - 0.00022984807042544878
