@@ -24,7 +24,8 @@ datacite:
   - Stadler, C.B., Lindvall, M., Lundström, C. et al. Proactive Construction of an Annotated Imaging Database for Artificial Intelligence Training. J Digit Imaging (2020). https://doi.org/10.1007/s10278-020-00384-4
   access_time: Unlimited time
 other:
-  diagnosis: Actinic keratosis, basal cell carcinoma and, dermatofibroma + benign cases
+  diagnosis: "Actinic keratosis, basal cell carcinoma, dermatofibroma, dysplastic nevus, intradermal nevus, keratoachantoma, lentigo malignant melanoma, malignant melanoma, malignant melanoma in situ, scar, seborrheic keratosis, squamous cell carcinoma and squamous cell carcinoma in situ + benign cases"
+
   geographical_area: Europe
   number_of_images: 150
   number_of_cases: 100
@@ -39,18 +40,12 @@ other:
   - '45'
   - '90'
   anatomical_site:
-  - Skin structure of cheek (body structure)
-  - Skin structure of upper arm
-  - Skin structure of lower leg (body structure)
-  - Skin structure of back (body structure)
-  - Skin structure of hand (body structure)
-  - Skin appendage structure
-  - Skin of knee
+  - Skin 39937001
   animal_species:
   - Homo sapiens
   block_preparation: []
   bp_image_type:
-  - Brightfield
+  - WSI Brightfield
   extraction_method:
   - Biopsy
   - Excision
@@ -61,21 +56,10 @@ other:
   specimen_type:
   - Histopathology
   staining_name:
-  - "KIR\xD6D" 
-  - KI67
-  - P16
-  - hematoxylin stain,water soluble eosin stain
-  - "SOXR\xD6D"
-  - CK18
-  - MELAN
-  - HSV1
-  - HSV2
-  - CKAE
-  - SOX10
-  - HMB,
+  - "H&E"
   shortName: "SD1"
   status:
-  annotation: "YES"
+  annotation: "YES. Manual annotations made by 1 resident reviewed by 1 pathologist. Accurate annotations were made over the whole tissues. 16741 separate annotations were made."
   countries-shared:
   - "FI"
   - "NO"
@@ -108,17 +92,3 @@ other:
 access: Direct
 ---
 
-## License
-
-Copyright
-{{ page.datacite.copyrightYear }}
-{{ page.datacite.copyrightHolder | map: "name" |  join: ", " }}
-
-Donec nibh elit, tincidunt eget vulputate ac, consequat in ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras interdum enim at libero sodales finibus. Donec vitae lorem quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus eget orci vulputate quam porttitor dignissim. Maecenas commodo, nibh et iaculis blandit, leo arcu scelerisque tortor, id porttitor metus tortor commodo quam. Vivamus a dapibus ipsum, eu euismod elit.
-
-{{ page.datacite.author | map: "name" | array_to_sentence_string }}
-({{ page.datacite.datePublished | date: "%Y" }})
-{{ page.datacite.name }}
-[doi:{{ page.datacite['@id'] | remove: "https://doi.org/" }}]({{ page.datacite["@id"] }}).
-
- Integer tempus ullamcorper quam, eu consequat ante pulvinar ac. Nulla in ipsum mattis, congue orci vitae, rhoncus lacus. Aliquam nunc turpis, tincidunt in nibh eu, bibendum luctus diam. Praesent varius orci erat, nec sollicitudin tellus venenatis vel. Morbi quis ullamcorper arcu, quis ultricies odio.

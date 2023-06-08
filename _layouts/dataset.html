@@ -113,54 +113,8 @@
             </td>
           </tr>
           <tr>
-            <th>Diagnosis</th>
+            <th>Medical Diagnosis</th>
             <td>{{page.other.diagnosis}} </td>
-          </tr>
-          <tr>
-            <th>Age at extraction</th>
-            <td>
-             <p> {{page.other.age_at_extraction[0]}}-{{page.other.age_at_extraction[1]}}</p>
-            </td>
-          </tr>
-          <tr>
-            <th>Geographical area</th>
-            <td>{{page.other.geographical_area}} </td>
-          </tr>
-          <tr>
-          <tr>
-            <th>Extraction method</th>
-            <td>
-              {% for item in page.other.extraction_method %}
-            <p>{{item}}</p>
-              {% endfor %}
-            </td>
-          </tr>
-          <tr>
-            <th>Specimen type</th>
-            <td>{{page.other.specimen_type}}</td>
-          </tr>
-          <tr>
-            <th>Modality</th>
-            <td>
-              {% for m in page.other.modality %}
-                {% include modality-title.html modality=m %}<br/>
-              {% endfor %}
-            </td>
-          </tr>
-          <tr>
-            <th>BP image type</th>
-            <td>
-              {{page.other.bp_image_type}}
-            </td>
-          </tr>       
-          <tr>
-            <th>Staining information</th>
-            <td>
-              {% for item in page.other.staining_name %}
-            <p>{{item}}
-            </p>
-              {% endfor %}
-            </td>
           </tr>
           <tr>
             <th>Total number of whole slide images(WSI)</th>
@@ -171,7 +125,7 @@
           <tr>
             <th>Number of cases</th>
             <td>
-              {{page.other.number_of_cases}}
+              {{page.other.number_of_images}}
             </td>
           </tr>
           <tr>
@@ -191,6 +145,45 @@
             <td>{{ page.other.bytes }}</td>
           </tr>
           <tr>
+            <th>Age at extraction</th>
+            <td>
+             <p> {{page.other.age_at_extraction[0]}}-{{page.other.age_at_extraction[1]}}</p>
+            </td>
+          </tr>
+          
+          <tr>
+            <th>Geographical area</th>
+            <td>{{page.other.geographical_area}} </td>
+          </tr>
+          <tr>
+          <tr>
+            <th>Extraction method</th>
+            <td>
+              {% for item in page.other.extraction_method %}
+            <p>{{item}}</p>
+              {% endfor %}
+            </td>
+          </tr>
+          <tr>
+            <th>Specimen type</th>
+            <td>{{page.other.specimen_type}}</td>
+          </tr>
+          <tr>
+            <th>BP image type</th>
+            <td>
+              {{page.other.bp_image_type}}
+            </td>
+          </tr>       
+          <tr>
+            <th>Staining information</th>
+            <td>
+              {% for item in page.other.staining_name %}
+            <p>{{item}}
+            </p>
+              {% endfor %}
+            </td>
+          </tr>
+          <tr>
             <th>Resolution</th>
             <td>
               {% for link in page.other.image_resolution %}
@@ -203,7 +196,7 @@
             <td>{{ page.other.annotation }}</td>
           </tr>
           <tr>
-            <th>Year of submission</th>
+            <th>Year of data submission</th>
             <td>{{ page.datacite.yearPublished }}</td>
           </tr>
           <tr>
@@ -237,20 +230,11 @@
               {% endfor %}
             </ol>
             </td>
-          </tr>
-          <tr>
-            <th>License</th>
-            <td><a>License information</a></td>
           </tr>         
         </table>
       </div>
-      <h2 id="access-apply">Apply for access</h2>
-      If you are interested to access data, apply through clicking link below.
-    </br>
-      <a href="{{site.baseurl}}/access" class="button">Apply for access</a>
-
       <h2>Comments</h2>
-      One physician was responsible for the manual annotations controlled by a second pathologist. Accurate annotations were made over the whole tissues. 16741 separate annotations were made.
+      Accurate annotations were made over the whole tissues. 16741 separate annotations were made. The following findings were annotated in the abnormal cases: actinic. In the normal skin cases were following structures chosen to be annotated: artifact, dermis, epidermis, normal skin, perichondrium, skin and subcutaneous structure, skin appendage structure, skin structure, structure of cartilage of auditory canal, subcutaneous fatty tissue, subcutaneous tissue and surgical margins.keratosis, basal cell carcinoma, dermatofibroma, dysplastic nevus, intradermal nevus, keratoachantoma, lentigo malignant melanoma, malignant melanoma, malignant melanoma in situ, scar, seborrheic keratosis, squamous cell carcinoma and squamous cell carcinoma in situ. Other areas annotated: abnormal, acanthosis, artifacts, dermis, epidermis, fibrosis, fibrin body, granuloma, inflammation, inflammatory edema, normal, perichondrium, reactive cellular changes, skin appendage structure, surgical margins, structure of cartilage of auditory canal, subcutaneous fatty tissue, subcutaneous tissue, surgical margins and from which body part the skin was excised.
       <h2>Terms of use</h2>
       <div class="info-box">
         
@@ -274,12 +258,21 @@
           <tr>
             <th>Allowed Geographical distribution</th>
             <td>Worldwide</td>
+          </tr>
+          
+          <tr>
+            <th>Access duration</th>
+            <td>-</td>
           </tr>        
         </table>
-        
 
-      {{ content }}
-      
+    </br>
+    <h2 >License</h2>
+    For more information on big picture license, please visit <a>BP  License</a>
+      <h2 id="access-apply">Apply for access</h2>
+      If you are interested to access data, apply through clicking link below.
+      <a href="{{site.baseurl}}/access" class="button">Apply for access</a>
+
       {% include footer.html %}
     </main>
     <script src="{{site.baseurl}}/assets/js/anchor.min.js"></script>
