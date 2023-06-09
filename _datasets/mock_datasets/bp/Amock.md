@@ -29,7 +29,7 @@ other:
   geographical_area: Europe
   number_of_images: 150
   number_of_cases: 100
-  number_of_biological_beings: 50
+  number_of_biological_beings: 
   number_of_observations: 
   comments: "One physician was responsible for the manual annotations controlled by a second pathologist. Accurate annotations were made over the whole tissues. 16741 separate annotations were made."
   metadata_version: v0.1.2
