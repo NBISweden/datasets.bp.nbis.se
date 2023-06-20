@@ -113,51 +113,97 @@
             </td>
           </tr>
           <tr>
-            <th>Medical Diagnosis</th>
+            <th>Medical Diagnosis
+              <a class="hover-text" > <img id="info-icon" src="{{site.baseurl}}/assets/images/info-icon.png">
+                <span class="tooltip-text">Medical diagnoses included in the study descibed at a general level. 
+                  <br/>The diagnosis correlates to the disease or condition the patient was given in the<br/>
+                   anatomical pathology procedure. Representative histopathology slides. either as single<br/> 
+                   slides or on case-level, 
+                  are representative from this diagnostic procedure in the clinical dataset.</span>
+              </a>
+            
+
+            </th>
+          
             <td>{{page.other.diagnosis}} </td>
           </tr>
           <tr>
-            <th>Total number of whole slide images(WSI)</th>
+            <th>Total number of whole slide images(WSI)
+              <a class="hover-text" > <img id="info-icon" src="{{site.baseurl}}/assets/images/info-icon.png">
+                <span class="tooltip-text">Total number of whole slide images (WSI) in the dataset.</span>
+              </a>
+            </th>
             <td>
               {{page.other.number_of_images}}
             </td>
           </tr>
           <tr>
-            <th>Number of cases</th>
+            <th>Number of cases
+              <a class="hover-text" > <img id="info-icon" src="{{site.baseurl}}/assets/images/info-icon.png">
+                <span class="tooltip-text">Slides from a biological being might be assembled in a case in a dataset.<br/>
+                The context for a case can be an examination, a disease or a study. </span>
+              </a>
+            </th>
             <td>
               {{page.other.number_of_images}}
             </td>
           </tr>
           <tr>
-            <th>Number of biological beings</th>
+            <th>Number of biological beings
+              <a class="hover-text" > <img id="info-icon" src="{{site.baseurl}}/assets/images/info-icon.png">
+                <span class="tooltip-text">The number of unique biological beings (patients/individuals/animals) included in the dataset. 
+                  <br/>A reference to the Biological Being the case relates to. </span>
+              </a>
+            </th>
             <td>
               {{page.other.number_of_biological_beings}}
             </td>
           </tr>
           <tr>
-            <th>Number of observations</th>
+            <th>Number of observations
+              <a class="hover-text" > <img id="info-icon" src="{{site.baseurl}}/assets/images/info-icon.png">
+                <span class="tooltip-text">The number of unique study observations included in the dataset. </span>
+              </a>  
+            </th>
             <td>
               {{page.other.number_of_observations}}
             </td>
           </tr>
           <tr>
-            <th>Total size of the dataset (bytes)</th>
+            <th>Total size of the dataset (bytes)
+              <a class="hover-text" > <img id="info-icon" src="{{site.baseurl}}/assets/images/info-icon.png">
+                <span class="tooltip-text">Total storage size of the dataset (bytes).</span>
+              </a>  
+            </th>
             <td>{{ page.other.bytes }}</td>
           </tr>
           <tr>
-            <th>Age at extraction</th>
+            <th>Age at extraction
+              <a class="hover-text" > <img id="info-icon" src="{{site.baseurl}}/assets/images/info-icon.png">
+                <span class="tooltip-text">The age range of the biological beings in the dataset at the time point of
+                   extraction of the specimens..</span>
+              </a>
+            </th>
             <td>
              <p> {{page.other.age_at_extraction[0]}}-{{page.other.age_at_extraction[1]}}</p>
             </td>
           </tr>
           
           <tr>
-            <th>Geographical area</th>
+            <th>Geographical area
+              <a class="hover-text" > <img id="info-icon" src="{{site.baseurl}}/assets/images/info-icon.png">
+                <span class="tooltip-text">Geographical origin of the biological beings in the dataset.</span>
+              </a>              
+            </th>
             <td>{{page.other.geographical_area}} </td>
           </tr>
           <tr>
           <tr>
-            <th>Extraction method</th>
+            <th>Extraction method
+              <a class="hover-text" > <img id="info-icon" src="{{site.baseurl}}/assets/images/info-icon.png">
+                <span class="tooltip-text">The method of extraction (e.g. biopsy, excision, scraping, smear etc.).</span>
+              </a> 
+            </th>
             <td>
               {% for item in page.other.extraction_method %}
             <p>{{item}}</p>
@@ -165,17 +211,29 @@
             </td>
           </tr>
           <tr>
-            <th>Specimen type</th>
+            <th>Specimen type
+              <a class="hover-text" > <img id="info-icon" src="{{site.baseurl}}/assets/images/info-icon.png">
+                <span class="tooltip-text">The type of the specimens (e.g. histology, cytology etc.).</span>
+              </a> 
+            </th>
             <td>{{page.other.specimen_type}}</td>
           </tr>
           <tr>
-            <th>BP image type</th>
+            <th>BP image type
+              <a class="hover-text" > <img id="info-icon" src="{{site.baseurl}}/assets/images/info-icon.png">
+                <span class="tooltip-text">The type of the Image (e.g. WSI brightfield, fluorescence, photographs, macroscopy, phase contrast etc.).</span>
+              </a>
+            </th>
             <td>
               {{page.other.bp_image_type}}
             </td>
           </tr>       
           <tr>
-            <th>Staining information</th>
+            <th>Staining information
+              <a class="hover-text" > <img id="info-icon" src="{{site.baseurl}}/assets/images/info-icon.png">
+                <span class="tooltip-text">Specifies the staining procedure used in the dataset. A reference to one or more stainings that was used.</span>
+              </a>
+            </th>
             <td>
               {% for item in page.other.staining_name %}
             <p>{{item}}
@@ -184,7 +242,11 @@
             </td>
           </tr>
           <tr>
-            <th>Resolution</th>
+            <th>Resolution
+              <a class="hover-text" > <img id="info-icon" src="{{site.baseurl}}/assets/images/info-icon.png">
+                <span class="tooltip-text">The resolution of the image in the dataset in terms of the width and height of a pixel in micrometers (W, H).</span>
+              </a>
+            </th>
             <td>
               {% for link in page.other.image_resolution %}
               <p>{{link}}</p>
@@ -192,37 +254,73 @@
             </td>
           </tr>
         <tr>
-            <th>Annotations</th>
+            <th>Annotations
+              <a class="hover-text" > <img id="info-icon" src="{{site.baseurl}}/assets/images/info-icon.png">
+                <span class="tooltip-text">Indicates if the dataset contain annotations.</span>
+              </a>
+            </th>
             <td>{{ page.other.annotation }}</td>
           </tr>
           <tr>
-            <th>Year of data submission</th>
+            <th>Year of data submission
+              <a class="hover-text" > <img id="info-icon" src="{{site.baseurl}}/assets/images/info-icon.png">
+                <span class="tooltip-text">Year of the first submission of the dataset to the BigPicture platform. </span>
+              </a>
+            </th>
             <td>{{ page.datacite.yearPublished }}</td>
           </tr>
           <tr>
-            <th>Dataset version</th>
+            <th>Dataset version
+              <a class="hover-text" > <img id="info-icon" src="{{site.baseurl}}/assets/images/info-icon.png">
+                <span class="tooltip-text">The current version of the Dataset. As the Dataset may be updated after initial upload,<br/> 
+                  the version field keeps track of the version of a specific Dataset. Default 1.0.0. Uniformly<br/>
+                   increasing with every update.</span>
+              </a>
+            </th>
             <td>{{ page.datacite.version }}</td>
           </tr>
           <tr>
-            <th>Metadata standard version</th>
+            <th>Metadata standard version
+              <a class="hover-text" > <img id="info-icon" src="{{site.baseurl}}/assets/images/info-icon.png">
+                <span class="tooltip-text">The BIGPICTURE metadata standard version of the Dataset. The set of metadata fields<br/>
+                   may be subject to modifications, this field identifies the BIGPICTURE metadata standard version <br/>
+                   for the specific dataset. </span>
+              </a>
+            </th>
             <td>{{page.other.metadata_version}}</td>
           </tr>
           <tr>
-            <th>Change log summary</th>
+            <th>Change log summary
+              <a class="hover-text" > <img id="info-icon" src="{{site.baseurl}}/assets/images/info-icon.png">
+                <span class="tooltip-text">Specifies major dataset updates in each version update. An expandable field of version updates.</span>
+              </a>
+            </th>
             <td>{{page.other.changelog}}</td>
           </tr>
           <tr>
-            <th>Center name</th>
+            <th>Center name 
+              <a class="hover-text" > <img id="info-icon" src="{{site.baseurl}}/assets/images/info-icon.png">
+                <span class="tooltip-text">A unique identifier of the party submitting the Dataset. </span>
+              </a>
+            </th>
             <td>{{page.other.center_name}}</td>
           </tr>
           <tr>
-            <th>Cite as</th>
+            <th>Cite as
+              <a class="hover-text" > <img id="info-icon" src="{{site.baseurl}}/assets/images/info-icon.png">
+                <span class="tooltip-text">Cite the dataset as indicated. </span>
+              </a>
+            </th>
             <td>
               {{ page.datacite.citation}}
             </td>
           </tr>
           <tr>
-            <th>References</th>
+            <th>References
+              <a class="hover-text" > <img id="info-icon" src="{{site.baseurl}}/assets/images/info-icon.png">
+                <span class="tooltip-text">Relevant reference papers that have been using the dataset in research.  </span>
+              </a>
+            </th>
             <td>
               <ol class="references">
               {% for r in page.datacite.references %}
@@ -233,34 +331,81 @@
           </tr>         
         </table>
       </div>
-      <h2>Comments</h2>
+      <h2>Comments/ Heading of your choice
+        <a class="hover-text" > <img id="info-icon" src="{{site.baseurl}}/assets/images/info-icon.png">
+          <span class="tooltip-text">Comments regarding the dataset - Disclaimers and/or important information for the user. </span>
+        </a>  
+      </h2>
       Accurate annotations were made over the whole tissues. 16741 separate annotations were made. The following findings were annotated in the abnormal cases: actinic. In the normal skin cases were following structures chosen to be annotated: artifact, dermis, epidermis, normal skin, perichondrium, skin and subcutaneous structure, skin appendage structure, skin structure, structure of cartilage of auditory canal, subcutaneous fatty tissue, subcutaneous tissue and surgical margins.keratosis, basal cell carcinoma, dermatofibroma, dysplastic nevus, intradermal nevus, keratoachantoma, lentigo malignant melanoma, malignant melanoma, malignant melanoma in situ, scar, seborrheic keratosis, squamous cell carcinoma and squamous cell carcinoma in situ. Other areas annotated: abnormal, acanthosis, artifacts, dermis, epidermis, fibrosis, fibrin body, granuloma, inflammation, inflammatory edema, normal, perichondrium, reactive cellular changes, skin appendage structure, surgical margins, structure of cartilage of auditory canal, subcutaneous fatty tissue, subcutaneous tissue, surgical margins and from which body part the skin was excised.
       <h2>Terms of use</h2>
       <div class="info-box">
         
         <table>
           <tr>
-            <th>Type of access</th>
+            <th>Type of access
+              <a class="hover-text" > <img id="info-icon" src="{{site.baseurl}}/assets/images/info-icon.png">
+                <span class="tooltip-text">* Direct Access <br/>
+                  * Indirect Access (via software only, w/o viewing data) 
+                   </span>
+              </a>
+            </th>
             <td>Direct access</td>
           </tr>
           <tr>
-            <th>Permitted use/purposes</th>
+            <th>Permitted use/purposes
+              <a class="hover-text" > <img id="info-icon" src="{{site.baseurl}}/assets/images/info-icon.png">
+                <span class="tooltip-text">* Implementation of Bigpicture Project (IMI2-945358)  <br/>
+                  * Research Use (defined Research Question) <br/>
+                  *  Direct Exploitation
+                   </span>
+              </a>
+            </th>
             <td>Research Use (defined Research Question) </td>
           </tr>
           <tr>
-            <th>Access approval process</th>
+            <th>Access approval process
+              <a class="hover-text" > <img id="info-icon" src="{{site.baseurl}}/assets/images/info-icon.png">
+                <span class="tooltip-text">* Registered access (LifeScience AAI login with<br/>
+                   Bigpicture authentication, no approval by Data Access Committee required)<br/>
+                  * Controlled Access (via Bigpicture DAC)<br/>
+                  * Controlled Access (via other DAC)
+                   </span>
+              </a>
+            </th>
             <td>Controlled Access (via other DAC)</td>
           </tr>
           <tr>
-            <th>Use restrictions</th>
+            <th>Use restrictions
+              <a class="hover-text" > <img id="info-icon" src="{{site.baseurl}}/assets/images/info-icon.png">
+                <span class="tooltip-text">* None (broad research use) <br/>
+                  *  Informed Consent Form-defined use restrictions  <br/>
+                  (specific area of research only): ……….  <br/>
+                  *  Other: ……………………. 
+                   </span>
+              </a>
+            </th>
             <td>None (broad research use)</td>
           </tr>
           <tr>
-            <th>Allowed Geographical distribution</th>
+            <th>Allowed Geographical distribution
+              <a class="hover-text" > <img id="info-icon" src="{{site.baseurl}}/assets/images/info-icon.png">
+                <span class="tooltip-text">* European Union and EEA countries <br/>
+                  * Countries with GDPR adequacy (link provided) <br/>
+                  * Worldwide
+                   </span>
+              </a>
+            </th>
             <td>Worldwide</td>
           </tr>
           <tr>
-            <th>Access duration</th>
+            <th>Access duration
+              <a class="hover-text" > <img id="info-icon" src="{{site.baseurl}}/assets/images/info-icon.png">
+                <span class="tooltip-text">* Unlimited time <br/>
+                  * Limited to the IMI Bigpicture project term <br/>
+                  * Limited to the duration of purpose of data access request
+                   </span>
+              </a>
+            </th>
             <td> Limited to the duration of purpose of data access request</td>
           </tr>        
         </table>
